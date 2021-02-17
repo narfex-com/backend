@@ -1,0 +1,1031 @@
+2020/10/19 10:09:01 [emerg] 1#1: "http" directive is not allowed here in /etc/nginx/conf.d/edaport.conf:1
+2020/10/19 10:09:04 [emerg] 1#1: "http" directive is not allowed here in /etc/nginx/conf.d/edaport.conf:1
+2020/10/19 10:09:08 [emerg] 1#1: "http" directive is not allowed here in /etc/nginx/conf.d/edaport.conf:1
+2020/10/19 10:09:10 [emerg] 1#1: "http" directive is not allowed here in /etc/nginx/conf.d/edaport.conf:1
+2020/10/19 10:09:14 [emerg] 1#1: "http" directive is not allowed here in /etc/nginx/conf.d/edaport.conf:1
+2020/10/19 10:09:20 [warn] 1#1: conflicting server name "foodport.io" on 0.0.0.0:80, ignored
+2020/10/19 10:09:20 [warn] 1#1: conflicting server name "foodport.io" on 0.0.0.0:80, ignored
+2020/10/19 10:09:47 [emerg] 1#1: host not found in upstream "edaport-prod-php-fpm" in /etc/nginx/conf.d/edaport.conf:22
+2020/10/19 10:20:22 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/foodport.io/fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/letsencrypt/live/foodport.io/fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2020/10/19 10:20:24 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/foodport.io/fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/letsencrypt/live/foodport.io/fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2020/10/19 10:20:28 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/foodport.io/fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/letsencrypt/live/foodport.io/fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2020/10/19 10:20:31 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/foodport.io/fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/letsencrypt/live/foodport.io/fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2020/10/19 10:20:33 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/foodport.io/fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/letsencrypt/live/foodport.io/fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2020/10/19 10:20:36 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/foodport.io/fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/letsencrypt/live/foodport.io/fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2020/10/19 10:20:39 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/foodport.io/fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/letsencrypt/live/foodport.io/fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2020/10/19 10:20:46 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/foodport.io/fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/letsencrypt/live/foodport.io/fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2020/10/19 10:21:00 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/foodport.io/fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/letsencrypt/live/foodport.io/fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2020/10/19 10:21:26 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/foodport.io/fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/letsencrypt/live/foodport.io/fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2020/10/19 10:22:18 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/foodport.io/fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/letsencrypt/live/foodport.io/fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2020/10/19 10:23:18 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/foodport.io/fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/letsencrypt/live/foodport.io/fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2020/10/19 10:24:19 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/foodport.io/fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/letsencrypt/live/foodport.io/fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2020/10/19 10:25:20 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/foodport.io/fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/letsencrypt/live/foodport.io/fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2020/10/22 12:01:54 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/foodport.io/fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/letsencrypt/live/foodport.io/fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2020/10/22 12:01:57 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/foodport.io/fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/letsencrypt/live/foodport.io/fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2020/10/22 12:01:59 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/foodport.io/fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/letsencrypt/live/foodport.io/fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2020/10/22 12:02:01 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/foodport.io/fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/letsencrypt/live/foodport.io/fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2020/10/22 12:02:03 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/foodport.io/fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/letsencrypt/live/foodport.io/fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2020/10/22 12:02:07 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/foodport.io/fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/letsencrypt/live/foodport.io/fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2020/10/22 12:02:13 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/foodport.io/fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/letsencrypt/live/foodport.io/fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2020/10/22 12:02:23 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/foodport.io/fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/letsencrypt/live/foodport.io/fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2020/10/22 12:02:39 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/foodport.io/fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/letsencrypt/live/foodport.io/fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2020/10/22 12:03:07 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/foodport.io/fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/letsencrypt/live/foodport.io/fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2020/10/22 12:03:59 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 12:04:59 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 12:06:00 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 12:07:00 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 12:08:01 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 12:09:02 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 12:10:05 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/foodport.io/fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/letsencrypt/live/foodport.io/fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2020/10/22 12:11:06 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 12:12:08 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 12:13:09 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 12:14:10 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 12:15:11 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 12:16:13 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 12:17:14 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 12:18:15 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 12:19:21 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 12:20:22 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 12:21:23 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 12:22:23 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 12:23:24 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 12:24:25 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 12:25:27 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 12:26:28 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 12:27:29 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 12:28:30 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 12:29:30 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 12:30:31 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 12:31:32 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 12:32:33 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 12:33:36 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/foodport.io/fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/letsencrypt/live/foodport.io/fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2020/10/22 12:34:38 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 12:35:40 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 12:36:41 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 12:37:43 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 12:38:44 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 12:39:45 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 12:40:46 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 12:41:47 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 12:42:48 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 12:43:49 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 12:44:50 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 12:45:51 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 12:46:52 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 12:47:53 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 12:48:53 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 12:49:54 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 12:50:54 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 12:51:54 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 12:52:55 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 12:53:55 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 12:54:56 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 12:55:57 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 12:56:58 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 12:57:58 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 12:58:58 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 12:59:59 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 13:00:59 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 13:02:00 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 13:03:00 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 13:04:01 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 13:05:01 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 13:06:02 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 13:07:03 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/foodport.io/fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/letsencrypt/live/foodport.io/fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2020/10/22 13:08:04 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/foodport.io/fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/letsencrypt/live/foodport.io/fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2020/10/22 13:09:05 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 13:10:05 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 13:11:05 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 13:12:06 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 13:13:07 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 13:14:08 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 13:15:09 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 13:16:09 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 13:17:10 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 13:18:10 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 13:19:11 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 13:20:11 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 13:21:12 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 13:22:12 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 13:23:13 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 13:24:13 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 13:25:14 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 13:26:14 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 13:27:15 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 13:28:15 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 13:29:15 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 13:30:16 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 13:31:16 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 13:32:17 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 13:33:18 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 13:34:18 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 13:35:18 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 13:36:19 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 13:37:19 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 13:38:20 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 13:39:21 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 13:40:22 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 13:41:23 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 13:42:23 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 13:43:24 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 13:44:24 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 13:45:25 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 13:46:26 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 13:47:27 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/foodport.io/fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/letsencrypt/live/foodport.io/fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2020/10/22 13:48:28 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/foodport.io/fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/letsencrypt/live/foodport.io/fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2020/10/22 13:49:28 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 13:50:29 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 13:51:29 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 13:52:30 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 13:53:30 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 13:54:31 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 13:55:31 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 13:56:32 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 13:57:32 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 13:58:33 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 13:59:33 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 14:00:34 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 14:01:34 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 14:02:35 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 14:03:35 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 14:04:36 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 14:05:36 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 14:06:37 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 14:07:38 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 17:06:01 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 17:07:04 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 17:08:04 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 17:09:05 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 17:10:05 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 17:11:06 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 17:12:06 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 17:13:07 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 17:14:07 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 17:15:08 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 17:16:09 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 17:17:10 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 17:18:10 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 17:19:11 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 17:20:11 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 17:21:12 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 17:22:12 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 17:23:13 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 17:24:13 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 17:25:15 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/foodport.io/fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/letsencrypt/live/foodport.io/fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2020/10/22 17:26:15 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 17:27:16 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 17:28:17 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 17:29:18 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 17:30:19 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 17:31:19 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 17:32:20 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 17:33:21 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 17:34:21 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 17:35:22 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 17:36:23 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 17:37:23 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 17:38:24 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 17:39:25 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 17:40:26 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 17:41:28 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 17:42:28 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 17:43:29 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 17:44:30 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 17:45:30 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 17:46:31 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 17:47:31 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 17:48:32 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 17:49:32 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 17:50:33 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 17:51:33 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 17:52:34 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 17:53:34 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 17:54:35 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 17:55:35 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 17:56:36 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 17:57:37 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 17:58:37 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 17:59:39 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/foodport.io/fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/letsencrypt/live/foodport.io/fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2020/10/22 18:00:40 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 18:01:40 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 18:02:41 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 18:03:41 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 18:04:42 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 18:05:42 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 18:06:44 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 18:07:45 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 18:08:45 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 18:09:46 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 18:10:46 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 18:11:47 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 18:12:47 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 18:13:51 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 18:14:52 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 18:15:53 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 18:16:53 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 18:17:54 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 18:18:55 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 18:19:57 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 18:20:59 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 18:22:00 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 18:23:01 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 18:24:01 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 18:25:02 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 18:26:03 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 18:27:04 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 18:28:04 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 18:29:05 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 18:30:05 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 18:31:06 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 18:32:06 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 18:33:07 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 18:34:07 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 18:35:08 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 18:36:08 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 18:37:09 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 18:38:09 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 18:39:10 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 18:40:11 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 18:41:12 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 18:42:12 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 18:43:13 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 18:44:13 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 18:45:14 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 18:46:15 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/22 18:47:16 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/foodport.io/fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/letsencrypt/live/foodport.io/fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2020/10/22 18:48:17 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/foodport.io/fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/letsencrypt/live/foodport.io/fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2020/10/22 18:49:18 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/25 10:43:31 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/foodport.io/fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/letsencrypt/live/foodport.io/fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2020/10/25 10:43:37 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/foodport.io/fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/letsencrypt/live/foodport.io/fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2020/10/25 10:43:42 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/foodport.io/fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/letsencrypt/live/foodport.io/fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2020/10/25 10:43:48 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/foodport.io/fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/letsencrypt/live/foodport.io/fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2020/10/25 10:43:52 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/foodport.io/fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/letsencrypt/live/foodport.io/fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2020/10/25 10:43:56 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/foodport.io/fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/letsencrypt/live/foodport.io/fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2020/10/25 10:44:02 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/foodport.io/fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/letsencrypt/live/foodport.io/fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2020/10/25 10:44:13 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/foodport.io/fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/letsencrypt/live/foodport.io/fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2020/10/25 10:44:28 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/foodport.io/fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/letsencrypt/live/foodport.io/fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2020/10/25 10:44:54 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/25 10:45:47 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/25 10:46:47 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/25 10:47:48 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/25 10:48:48 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/25 10:49:49 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/25 10:50:50 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/25 10:51:50 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/25 10:52:51 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/25 10:53:52 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/foodport.io/fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/letsencrypt/live/foodport.io/fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2020/10/25 10:54:53 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/25 10:55:54 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/25 10:56:55 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/25 10:57:56 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/25 10:58:56 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/25 10:59:56 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/25 11:00:57 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/25 11:01:57 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/25 11:02:58 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/25 11:04:01 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/26 05:27:14 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/foodport.io/fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/letsencrypt/live/foodport.io/fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2020/10/26 05:28:14 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/26 05:29:15 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/26 05:30:16 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/26 05:31:16 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/26 05:32:17 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/foodport.io/fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/letsencrypt/live/foodport.io/fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2020/10/26 05:33:18 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/foodport.io/fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/letsencrypt/live/foodport.io/fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2020/10/26 05:34:19 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/26 05:35:20 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/26 05:36:21 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/26 05:37:21 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/26 05:38:22 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/26 05:39:22 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/26 05:40:23 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/26 05:41:23 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/26 05:42:24 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/26 05:43:24 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/26 05:44:25 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/26 05:45:26 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/26 05:46:26 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/26 05:47:27 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/26 05:48:27 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/26 05:49:28 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/26 05:50:28 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/26 05:51:28 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/26 05:52:29 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/26 05:53:29 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/26 05:54:30 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/26 05:55:31 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/26 05:56:32 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/26 05:57:32 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/26 05:58:33 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/26 05:59:33 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/26 06:00:34 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/26 06:01:35 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/26 06:02:35 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/26 06:03:36 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/26 06:04:36 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/26 06:05:39 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/foodport.io/fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/letsencrypt/live/foodport.io/fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2020/10/26 07:11:06 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/foodport.io/fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/letsencrypt/live/foodport.io/fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2020/10/26 07:12:07 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/26 07:13:09 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/26 07:14:10 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/26 07:15:10 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/26 07:16:11 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/26 07:17:11 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/26 07:18:12 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/26 07:19:13 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/26 07:20:13 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/26 07:21:14 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/26 07:22:14 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/26 07:23:15 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/26 07:24:15 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/26 07:25:16 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/26 07:26:17 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/26 07:27:18 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/26 07:28:18 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/26 07:29:19 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/26 07:30:20 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/26 07:31:21 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/26 07:32:21 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/26 07:33:22 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/26 07:34:23 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/26 07:35:23 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/26 07:36:24 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/26 07:37:24 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/26 07:38:25 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/26 07:39:26 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/26 07:40:26 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/26 07:41:27 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/26 07:42:28 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/26 07:43:30 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/foodport.io/fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/letsencrypt/live/foodport.io/fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2020/10/26 07:44:31 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/26 07:45:32 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/26 07:46:32 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/26 07:47:33 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/26 07:48:33 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/26 07:49:34 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/26 07:50:34 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/26 07:51:36 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/26 07:52:36 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/26 07:53:37 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/26 07:54:37 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/26 07:55:38 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/26 07:56:39 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/26 07:57:39 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/26 07:58:40 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/26 07:59:40 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/26 08:00:41 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/26 08:01:42 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/26 08:02:43 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/26 08:03:44 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/26 08:04:44 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/26 08:05:45 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/26 08:06:45 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/26 08:07:46 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/26 08:08:46 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/26 08:09:47 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/26 08:10:47 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/26 08:11:48 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/26 08:12:49 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/26 08:13:49 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/26 08:14:50 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/26 08:15:51 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/foodport.io/fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/letsencrypt/live/foodport.io/fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2020/10/26 08:16:52 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/26 08:17:52 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/26 08:18:53 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/26 08:19:53 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/26 08:20:54 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/26 08:21:54 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/26 08:22:55 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/26 08:23:56 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/26 08:24:56 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/26 08:25:57 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/26 08:26:57 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/26 08:27:58 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/26 08:28:58 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/26 08:29:58 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/26 08:30:59 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/26 08:31:59 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/26 08:33:00 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/26 08:34:00 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/26 08:35:01 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/26 08:36:01 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/26 08:37:02 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/26 08:38:02 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/26 08:39:03 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/26 08:40:04 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/26 08:41:04 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/26 08:42:04 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/26 08:43:05 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/26 08:44:06 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/26 08:45:07 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/26 08:46:07 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/26 08:47:08 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/26 08:48:08 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/26 08:49:09 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/26 08:50:09 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/26 08:51:10 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/26 08:52:10 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/26 08:53:12 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/26 08:54:15 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/26 08:55:18 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/foodport.io/fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/letsencrypt/live/foodport.io/fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2020/10/26 08:56:20 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/foodport.io/fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/letsencrypt/live/foodport.io/fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2020/10/26 08:57:20 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/26 08:58:22 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/26 08:59:23 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/26 09:00:24 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/26 09:01:25 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/26 09:02:26 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/26 09:03:28 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/26 09:04:30 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/26 09:05:30 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/26 09:06:31 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/26 09:07:31 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/26 09:08:32 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/26 09:09:33 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/26 09:10:33 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/26 09:11:34 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/26 09:12:34 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/26 09:13:35 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/26 09:14:36 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/26 09:15:36 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/26 09:16:37 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/26 09:17:37 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/10/31 17:50:19 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/foodport.io/fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/letsencrypt/live/foodport.io/fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2020/10/31 17:50:22 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/foodport.io/fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/letsencrypt/live/foodport.io/fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2020/10/31 17:50:26 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/foodport.io/fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/letsencrypt/live/foodport.io/fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2020/10/31 17:50:29 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/foodport.io/fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/letsencrypt/live/foodport.io/fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2020/10/31 17:50:32 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/foodport.io/fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/letsencrypt/live/foodport.io/fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2020/10/31 17:50:36 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/foodport.io/fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/letsencrypt/live/foodport.io/fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2020/10/31 17:50:42 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/foodport.io/fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/letsencrypt/live/foodport.io/fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2020/10/31 17:50:50 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/foodport.io/fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/letsencrypt/live/foodport.io/fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2020/10/31 17:51:05 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/foodport.io/fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/letsencrypt/live/foodport.io/fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2020/10/31 17:51:32 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/10/31 17:52:24 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/10/31 17:53:24 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/10/31 17:54:25 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/10/31 17:55:25 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/10/31 17:56:25 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/10/31 17:57:26 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/10/31 17:58:26 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/10/31 17:59:27 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/10/31 18:00:27 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/10/31 18:01:28 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/10/31 18:02:28 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/10/31 18:03:29 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/10/31 18:04:30 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/10/31 18:05:31 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/foodport.io/fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/letsencrypt/live/foodport.io/fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2020/10/31 18:06:31 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/10/31 18:07:33 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/10/31 18:08:34 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/10/31 18:09:34 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/10/31 18:10:35 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/10/31 18:11:35 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/10/31 18:12:36 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/10/31 18:13:36 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/10/31 18:14:37 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/10/31 18:15:43 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/10/31 18:16:43 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/10/31 18:17:44 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/10/31 18:18:44 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/10/31 18:19:45 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/10/31 18:20:45 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/10/31 18:21:46 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/10/31 18:22:47 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/10/31 18:23:48 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/10/31 18:24:48 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/10/31 18:25:49 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/10/31 18:26:49 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/10/31 18:27:50 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/10/31 18:28:50 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/10/31 18:29:51 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/10/31 18:30:51 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/10/31 18:31:52 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/10/31 18:32:52 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/10/31 18:33:53 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/10/31 18:34:54 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/10/31 18:35:55 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/10/31 18:36:55 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/10/31 18:37:56 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/10/31 18:38:56 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/10/31 18:39:57 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/10/31 18:40:57 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/10/31 18:41:58 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/10/31 18:42:59 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/10/31 18:43:59 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/10/31 18:45:00 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/10/31 18:46:01 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/foodport.io/fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/letsencrypt/live/foodport.io/fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2020/10/31 18:47:03 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/foodport.io/fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/letsencrypt/live/foodport.io/fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2020/10/31 18:48:04 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/10/31 18:49:04 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/10/31 18:50:05 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/10/31 18:51:05 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/10/31 18:52:06 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/10/31 18:53:07 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/10/31 18:54:08 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/10/31 18:55:09 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/10/31 18:56:09 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/10/31 18:57:10 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/10/31 18:58:11 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/10/31 18:59:11 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/10/31 19:00:12 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/10/31 19:01:12 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/10/31 19:02:13 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/10/31 19:03:13 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/10/31 19:04:14 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/10/31 19:05:14 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/10/31 19:06:14 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/10/31 19:07:15 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/10/31 19:08:15 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/10/31 19:09:16 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/10/31 19:10:16 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/10/31 19:11:17 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/10/31 19:12:17 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/10/31 19:13:18 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/10/31 19:14:18 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/10/31 19:15:19 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/10/31 19:16:19 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/10/31 19:17:20 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/10/31 19:18:20 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/10/31 19:19:21 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/10/31 19:20:21 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/10/31 19:21:22 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/10/31 19:22:22 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/10/31 19:23:23 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/10/31 19:24:24 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/10/31 19:25:25 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/foodport.io/fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/letsencrypt/live/foodport.io/fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2020/10/31 19:26:26 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/10/31 19:27:26 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/10/31 19:28:26 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/10/31 19:29:27 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/10/31 19:30:27 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/10/31 19:31:28 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/10/31 19:32:28 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/10/31 19:33:29 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/10/31 19:34:29 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/10/31 19:35:30 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/10/31 19:36:30 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/10/31 19:37:31 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/10/31 19:38:31 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/10/31 19:39:32 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/10/31 19:40:33 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/10/31 19:41:34 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/10/31 19:42:35 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/10/31 19:43:35 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/10/31 19:44:35 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/10/31 19:45:36 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/10/31 19:46:37 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/10/31 19:47:37 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/10/31 19:48:37 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/10/31 19:49:38 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/10/31 19:50:38 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/10/31 19:51:39 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/10/31 19:52:39 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/10/31 19:53:40 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/10/31 19:54:40 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/10/31 19:55:41 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/10/31 19:56:41 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/10/31 19:57:42 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/10/31 19:58:42 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/10/31 19:59:43 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/10/31 20:00:43 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/10/31 20:01:44 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/10/31 20:02:44 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/10/31 20:03:45 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/10/31 20:04:45 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/10/31 20:05:46 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/10/31 20:06:46 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/10/31 20:08:16 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/10/31 20:46:13 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/10/31 21:20:57 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/foodport.io/fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/letsencrypt/live/foodport.io/fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2020/10/31 23:21:54 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/foodport.io/fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/letsencrypt/live/foodport.io/fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2020/11/01 03:22:51 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/01 05:21:06 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/01 05:22:08 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/01 05:23:09 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/01 05:24:10 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/01 05:25:11 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/01 05:26:11 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/01 05:27:12 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/01 05:28:13 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/01 05:29:14 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/01 05:30:14 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/01 05:31:15 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/01 05:32:15 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/01 05:33:16 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/01 05:34:17 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/01 05:35:17 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/01 05:36:18 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/01 05:37:18 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/01 05:38:19 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/01 05:39:20 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/01 05:40:20 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/01 05:41:20 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/01 05:42:21 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/01 05:43:22 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/01 05:44:22 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/01 05:45:23 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/01 05:46:23 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/01 05:47:24 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/01 05:48:24 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/01 05:49:25 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/01 05:50:25 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/01 05:51:26 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/01 05:52:26 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/01 05:53:27 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/01 05:54:29 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/01 05:55:30 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/01 05:56:30 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/01 05:57:32 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/foodport.io/fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/letsencrypt/live/foodport.io/fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2020/11/01 05:58:32 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/01 05:59:33 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/01 06:00:34 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/01 06:01:34 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/01 06:02:35 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/01 06:03:35 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/01 06:04:36 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/01 06:05:36 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/01 06:06:37 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/01 06:07:37 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/01 06:08:38 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/01 06:09:38 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/01 06:10:39 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/01 06:11:39 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/01 06:12:40 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/01 06:13:40 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/01 06:14:41 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/01 06:15:42 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/01 07:21:45 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/01 07:22:47 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/01 07:23:48 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/01 07:24:48 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/01 07:25:49 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/01 07:26:49 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/01 07:27:50 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/01 07:28:55 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/01 07:29:56 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/01 07:30:56 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/01 07:31:57 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/01 07:32:57 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/01 07:33:58 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/02 16:10:31 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/foodport.io/fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/letsencrypt/live/foodport.io/fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2020/11/02 16:10:34 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/foodport.io/fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/letsencrypt/live/foodport.io/fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2020/11/02 16:10:38 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/foodport.io/fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/letsencrypt/live/foodport.io/fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2020/11/02 16:10:41 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/foodport.io/fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/letsencrypt/live/foodport.io/fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2020/11/02 16:10:44 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/foodport.io/fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/letsencrypt/live/foodport.io/fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2020/11/02 16:10:48 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/foodport.io/fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/letsencrypt/live/foodport.io/fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2020/11/02 16:10:53 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/foodport.io/fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/letsencrypt/live/foodport.io/fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2020/11/02 16:11:01 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/foodport.io/fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/letsencrypt/live/foodport.io/fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2020/11/10 16:55:58 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/foodport.io/fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/letsencrypt/live/foodport.io/fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2020/11/10 16:56:04 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/foodport.io/fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/letsencrypt/live/foodport.io/fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2020/11/10 16:56:08 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/foodport.io/fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/letsencrypt/live/foodport.io/fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2020/11/10 16:56:12 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/foodport.io/fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/letsencrypt/live/foodport.io/fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2020/11/10 16:56:18 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/foodport.io/fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/letsencrypt/live/foodport.io/fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2020/11/10 16:56:22 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/foodport.io/fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/letsencrypt/live/foodport.io/fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2020/11/10 16:56:29 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/foodport.io/fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/letsencrypt/live/foodport.io/fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2020/11/16 07:07:37 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/foodport.io/fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/letsencrypt/live/foodport.io/fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2020/11/16 07:07:55 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/foodport.io/fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/letsencrypt/live/foodport.io/fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2020/11/16 07:08:05 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/foodport.io/fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/letsencrypt/live/foodport.io/fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2020/11/16 07:08:10 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/foodport.io/fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/letsencrypt/live/foodport.io/fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2020/11/16 07:08:16 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/foodport.io/fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/letsencrypt/live/foodport.io/fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2020/11/16 07:08:21 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/foodport.io/fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/letsencrypt/live/foodport.io/fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2020/11/16 07:08:26 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/foodport.io/fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/letsencrypt/live/foodport.io/fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2020/11/16 07:08:34 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/foodport.io/fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/letsencrypt/live/foodport.io/fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2020/11/16 07:08:49 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/foodport.io/fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/letsencrypt/live/foodport.io/fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2020/11/16 07:09:16 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/19 11:39:14 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/foodport.io/fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/letsencrypt/live/foodport.io/fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2020/11/19 11:39:26 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/foodport.io/fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/letsencrypt/live/foodport.io/fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2020/11/19 11:39:32 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/foodport.io/fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/letsencrypt/live/foodport.io/fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2020/11/19 11:39:37 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/foodport.io/fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/letsencrypt/live/foodport.io/fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2020/11/19 11:39:41 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/foodport.io/fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/letsencrypt/live/foodport.io/fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2020/11/19 11:39:45 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/foodport.io/fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/letsencrypt/live/foodport.io/fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2020/11/19 11:39:50 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/foodport.io/fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/letsencrypt/live/foodport.io/fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2020/11/19 11:39:59 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/foodport.io/fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/letsencrypt/live/foodport.io/fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2020/11/19 11:40:13 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/foodport.io/fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/letsencrypt/live/foodport.io/fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2020/11/19 11:40:40 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/19 11:41:33 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/19 11:42:33 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/19 11:43:34 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/19 11:44:34 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/19 11:45:35 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/19 11:46:35 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/19 11:47:38 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/foodport.io/fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/letsencrypt/live/foodport.io/fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2020/11/19 11:48:40 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/foodport.io/fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/letsencrypt/live/foodport.io/fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2020/11/19 11:49:40 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/19 11:50:41 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/19 11:51:41 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/23 09:41:19 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/foodport.io/fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/letsencrypt/live/foodport.io/fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2020/11/23 09:41:23 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/foodport.io/fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/letsencrypt/live/foodport.io/fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2020/11/23 09:41:27 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/foodport.io/fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/letsencrypt/live/foodport.io/fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2020/11/23 09:41:31 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/foodport.io/fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/letsencrypt/live/foodport.io/fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2020/11/23 09:41:34 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/foodport.io/fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/letsencrypt/live/foodport.io/fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2020/11/23 09:41:38 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/foodport.io/fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/letsencrypt/live/foodport.io/fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2020/11/23 09:41:43 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/foodport.io/fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/letsencrypt/live/foodport.io/fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2020/11/23 09:41:56 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/foodport.io/fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/letsencrypt/live/foodport.io/fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2020/11/23 09:42:12 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/foodport.io/fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/letsencrypt/live/foodport.io/fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2020/11/25 21:46:31 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/foodport.io/fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/letsencrypt/live/foodport.io/fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2020/11/25 21:46:38 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/foodport.io/fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/letsencrypt/live/foodport.io/fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2020/11/25 21:46:46 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/foodport.io/fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/letsencrypt/live/foodport.io/fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2020/11/25 21:46:56 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/foodport.io/fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/letsencrypt/live/foodport.io/fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2020/11/25 21:47:00 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/foodport.io/fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/letsencrypt/live/foodport.io/fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2020/11/25 21:47:05 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/foodport.io/fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/letsencrypt/live/foodport.io/fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2020/11/25 21:47:12 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/foodport.io/fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/letsencrypt/live/foodport.io/fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2020/11/25 21:47:21 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/foodport.io/fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/letsencrypt/live/foodport.io/fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2020/11/25 21:47:37 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/foodport.io/fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/letsencrypt/live/foodport.io/fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2020/11/25 21:48:06 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/foodport.io/fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/letsencrypt/live/foodport.io/fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2020/11/25 21:49:00 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/foodport.io/fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/letsencrypt/live/foodport.io/fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2020/11/25 21:50:01 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/foodport.io/fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/letsencrypt/live/foodport.io/fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2020/11/25 21:51:03 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/foodport.io/fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/letsencrypt/live/foodport.io/fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2020/11/25 21:52:04 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/foodport.io/fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/letsencrypt/live/foodport.io/fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2020/11/25 21:53:06 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/foodport.io/fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/letsencrypt/live/foodport.io/fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2020/11/25 21:54:07 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/foodport.io/fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/letsencrypt/live/foodport.io/fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2020/11/26 10:35:44 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/foodport.io/fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/letsencrypt/live/foodport.io/fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2020/11/26 10:35:49 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/foodport.io/fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/letsencrypt/live/foodport.io/fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2020/11/26 10:35:53 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/foodport.io/fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/letsencrypt/live/foodport.io/fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2020/11/26 10:35:59 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/foodport.io/fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/letsencrypt/live/foodport.io/fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2020/11/26 10:36:05 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/foodport.io/fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/letsencrypt/live/foodport.io/fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2020/11/26 10:36:10 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/foodport.io/fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/letsencrypt/live/foodport.io/fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2020/11/26 10:36:16 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/foodport.io/fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/letsencrypt/live/foodport.io/fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2020/11/26 10:36:25 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/foodport.io/fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/letsencrypt/live/foodport.io/fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2020/11/26 10:36:41 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/foodport.io/fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/letsencrypt/live/foodport.io/fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2020/11/26 10:37:08 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/26 10:38:00 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/26 10:39:00 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/26 10:40:02 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/26 10:41:03 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/26 10:42:04 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/26 10:43:04 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/26 10:44:05 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/26 10:45:06 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/foodport.io/fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/letsencrypt/live/foodport.io/fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2020/11/26 10:46:07 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/foodport.io/fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/letsencrypt/live/foodport.io/fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2020/11/26 10:47:08 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/26 10:48:08 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/26 10:49:09 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/26 10:50:10 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/26 10:51:11 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/26 10:52:11 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/26 10:53:12 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/26 10:54:12 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/26 10:55:13 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/26 10:56:14 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/26 10:57:14 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/26 10:58:15 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/26 10:59:15 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/26 11:00:16 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/26 11:01:16 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/26 11:02:17 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/26 11:03:17 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/26 11:04:18 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/26 11:05:18 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/26 11:06:19 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/26 11:07:19 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/26 11:08:20 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/26 11:09:20 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/26 11:10:21 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/26 11:11:21 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/26 11:12:22 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/26 11:13:23 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/26 11:14:23 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/26 11:15:24 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/26 11:16:24 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/26 11:17:25 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/26 11:18:26 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/26 11:19:26 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/26 11:20:27 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/26 11:21:27 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/26 11:22:29 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/26 11:23:31 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/foodport.io/fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/letsencrypt/live/foodport.io/fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2020/11/26 11:24:32 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/26 11:25:32 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/26 11:26:33 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/26 11:27:33 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/26 11:28:34 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/26 11:29:34 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/26 11:30:35 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/26 11:31:35 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/26 11:32:36 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/26 11:33:37 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/26 11:34:38 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/26 11:35:38 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/26 11:36:39 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/26 11:37:40 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/26 11:38:40 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/26 11:39:41 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/26 11:40:41 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/26 11:41:42 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/26 11:42:42 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/26 11:43:43 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/26 11:44:43 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/26 11:45:44 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/26 11:46:44 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/26 11:47:48 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/26 11:48:49 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/26 11:49:49 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/26 11:50:50 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/26 11:51:50 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/26 11:52:51 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/26 11:53:51 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/26 11:54:52 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/26 11:55:52 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/26 11:56:53 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/26 11:57:54 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/26 11:58:54 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/26 11:59:55 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/26 12:00:56 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/26 12:01:56 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/26 12:02:57 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/26 12:03:59 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/foodport.io/fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/letsencrypt/live/foodport.io/fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2020/11/26 12:04:59 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/26 12:06:00 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/26 12:07:00 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/26 12:08:01 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/26 12:09:03 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/26 12:10:04 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/26 12:11:05 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/26 12:12:05 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/26 12:13:06 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/26 12:14:06 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/26 12:15:07 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/26 12:16:07 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/26 12:17:08 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/26 12:18:09 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/26 12:19:09 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/26 12:20:10 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/26 12:21:10 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/26 12:22:11 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/26 12:23:11 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/26 12:24:12 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/26 12:25:12 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/26 12:26:13 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/26 12:27:13 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/26 12:28:14 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/26 12:29:14 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/26 12:30:15 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/26 12:31:15 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/26 12:32:16 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/26 12:33:16 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/26 12:34:17 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/26 12:35:17 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/26 12:36:18 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/26 12:37:19 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/26 12:38:20 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/26 12:39:20 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/26 12:40:21 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/26 12:41:21 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/26 12:42:22 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/26 12:43:22 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/26 12:44:24 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/foodport.io/fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/letsencrypt/live/foodport.io/fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2020/11/26 12:45:25 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/foodport.io/fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/letsencrypt/live/foodport.io/fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2020/11/26 12:46:26 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/26 12:47:27 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/26 12:48:29 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/26 12:49:29 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/26 12:50:30 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/26 12:51:30 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/26 12:52:31 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/26 12:53:32 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/26 12:54:32 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/26 12:55:33 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/26 12:56:33 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/26 12:57:34 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/26 12:58:34 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/26 12:59:35 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/26 13:00:35 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/26 13:01:36 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/26 13:02:37 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/26 13:03:37 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/11/30 06:27:45 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/foodport.io/fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/letsencrypt/live/foodport.io/fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2020/11/30 06:27:51 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/foodport.io/fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/letsencrypt/live/foodport.io/fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2020/11/30 06:27:56 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/foodport.io/fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/letsencrypt/live/foodport.io/fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2020/11/30 06:28:03 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/foodport.io/fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/letsencrypt/live/foodport.io/fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2020/11/30 06:28:08 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/foodport.io/fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/letsencrypt/live/foodport.io/fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2020/11/30 06:28:12 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/foodport.io/fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/letsencrypt/live/foodport.io/fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2020/12/07 13:38:00 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/foodport.io/fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/letsencrypt/live/foodport.io/fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2020/12/07 13:38:06 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/foodport.io/fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/letsencrypt/live/foodport.io/fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2020/12/07 13:38:10 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/foodport.io/fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/letsencrypt/live/foodport.io/fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2020/12/07 13:38:15 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/foodport.io/fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/letsencrypt/live/foodport.io/fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2020/12/07 13:38:18 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/foodport.io/fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/letsencrypt/live/foodport.io/fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2020/12/07 13:38:21 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/foodport.io/fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/letsencrypt/live/foodport.io/fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2020/12/07 13:38:27 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/foodport.io/fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/letsencrypt/live/foodport.io/fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2020/12/07 13:38:37 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/foodport.io/fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/letsencrypt/live/foodport.io/fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2020/12/07 13:38:50 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/12/07 13:39:17 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/12/07 13:40:09 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/12/07 13:41:09 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/12/07 13:42:10 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/12/07 13:43:10 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/12/07 13:44:11 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/12/07 13:45:11 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/12/07 13:46:12 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/12/07 13:47:12 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/12/07 13:48:13 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/12/07 13:49:13 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/12/07 13:50:14 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/12/07 13:51:14 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/12/07 13:52:15 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/12/07 13:53:15 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/12/07 13:54:16 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/12/07 13:55:16 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/12/07 13:56:17 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/foodport.io/fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/letsencrypt/live/foodport.io/fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2020/12/07 13:57:18 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/foodport.io/fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/letsencrypt/live/foodport.io/fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2020/12/07 13:58:19 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/12/07 13:59:20 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/12/07 14:00:21 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/12/07 14:01:22 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/12/07 14:02:22 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/12/07 14:03:23 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/12/07 14:04:24 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/12/07 14:05:25 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/12/07 14:06:27 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/12/07 14:07:29 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/12/07 14:08:30 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/12/07 14:09:30 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/12/07 14:10:30 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/12/07 14:11:32 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/foodport.io/fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/letsencrypt/live/foodport.io/fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2020/12/07 14:12:33 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/12/07 14:13:35 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/foodport.io/fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/letsencrypt/live/foodport.io/fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2020/12/07 14:14:35 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/12/07 14:15:36 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/12/07 14:16:37 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/12/07 14:17:38 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/12/07 14:18:39 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/12/07 14:19:39 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/12/07 14:20:40 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/12/07 14:21:40 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/12/07 14:22:41 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/12/07 14:23:41 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/12/07 14:24:42 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/12/07 14:25:42 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/12/07 14:26:43 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/12/07 14:27:43 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/12/07 14:28:44 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/12/07 14:29:44 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/12/07 14:30:45 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/12/07 14:31:46 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/12/07 14:32:46 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/12/07 14:33:47 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/12/07 14:35:14 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/foodport.io/fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/letsencrypt/live/foodport.io/fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2020/12/07 14:36:15 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/12/07 14:37:15 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/12/07 14:38:16 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/12/07 14:39:17 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/12/07 14:40:17 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/12/07 14:41:18 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/12/07 14:42:19 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/12/07 14:43:19 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/12/07 14:44:20 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/12/07 14:45:21 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/12/07 14:46:21 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/12/07 14:47:24 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/12/07 14:48:25 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/12/07 14:49:25 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/12/07 14:50:26 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/12/07 14:51:26 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/12/07 14:52:27 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/12/07 14:53:27 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/12/07 14:54:28 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/12/07 14:55:38 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/foodport.io/fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/letsencrypt/live/foodport.io/fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2020/12/07 14:56:39 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/foodport.io/fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/letsencrypt/live/foodport.io/fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2020/12/07 14:57:39 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/foodport.io/fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/letsencrypt/live/foodport.io/fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2020/12/07 14:58:40 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/foodport.io/fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/letsencrypt/live/foodport.io/fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2020/12/07 14:59:41 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/12/07 15:00:42 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/foodport.io/fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/letsencrypt/live/foodport.io/fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2020/12/07 15:01:42 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/foodport.io/fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/letsencrypt/live/foodport.io/fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2020/12/07 15:02:43 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/12/07 15:03:43 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/12/07 15:04:44 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/12/07 15:05:44 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/12/07 15:06:45 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/12/07 15:07:45 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/12/07 15:08:51 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/12/07 15:09:52 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/12/07 15:10:53 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/12/07 15:11:53 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/12/07 15:12:53 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/12/07 15:13:54 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/12/07 15:14:55 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/12/07 15:15:56 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/12/07 15:16:57 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/12/07 15:17:59 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/12/07 15:18:59 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/12/07 15:20:00 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/12/07 15:21:00 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/12/07 15:22:01 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/12/07 15:23:02 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/12/07 15:24:03 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/12/07 15:25:03 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/12/07 15:26:04 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:54
+2020/12/07 15:27:06 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/foodport.io/fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/letsencrypt/live/foodport.io/fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2020/12/07 15:28:07 [emerg] 1#1: cannot load certificate "/etc/letsencrypt/live/foodport.io/fullchain.pem": BIO_new_file() failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/letsencrypt/live/foodport.io/fullchain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file)
+2020/12/07 15:29:08 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/12/07 15:30:09 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/12/07 15:31:09 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/12/07 15:32:10 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/12/07 15:33:10 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/12/07 15:34:11 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/12/07 15:35:11 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/12/07 15:36:12 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/12/07 15:37:12 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/12/07 15:38:13 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/12/07 15:39:13 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/12/07 15:40:13 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52
+2020/12/07 15:41:15 [emerg] 1#1: host not found in upstream "edaport-prod-websocket" in /etc/nginx/conf.d/edaport.conf:52

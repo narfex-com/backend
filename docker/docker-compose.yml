@@ -1,0 +1,106 @@
+version: "3.5"
+services:
+  narfex-redis:
+    image: redis:alpine
+    container_name: narfex-redis
+    volumes:
+      - narfex-redis:/data
+    ports:
+      - "16377:6379"
+    networks:
+      - narfex
+
+  narfex-mysql:
+    image: mysql:5.7.22
+    container_name: narfex-mysql
+    working_dir: /application
+    volumes:
+      - narfex-mysql:/var/lib/mysql/
+    environment:
+      MYSQL_ROOT_PASSWORD: KBHJ8765ljk767kh
+      MYSQL_DATABASE: app
+    ports:
+      - "2324:3306"
+    networks:
+      - narfex
+
+  narfex-webserver:
+    image: nginx:alpine
+    container_name: narfex-webserver
+    working_dir: /application
+    volumes:
+      - ../:/application
+      - ./phpdocker/nginx:/etc/nginx/conf.d
+      - ../../narfex-websockets-handler:/frontend
+      - ./nginx/log:/var/log/nginx
+    ports:
+      - "8080:80"
+    networks:
+      - narfex
+    depends_on:
+      - narfex-php-fpm
+
+  narfex-php-fpm:
+    build: phpdocker/php-fpm
+    container_name: narfex-php-fpm
+    working_dir: /application
+    volumes:
+      - ../:/application
+      - ./phpdocker/php-fpm/php-ini-overrides.ini:/etc/php/7.4/fpm/conf.d/99-overrides.ini
+    ports:
+      - "9000"
+    networks:
+      - narfex
+    environment:
+      APP_ENV: local
+      CONTAINER_ROLE: app
+
+  narfex-scheduler:
+    build: phpdocker/php-fpm
+    container_name: narfex-scheduler
+    volumes:
+      - ../:/application
+    environment:
+      APP_ENV: local
+      CONTAINER_ROLE: scheduler
+    networks:
+      - narfex
+
+  narfex-queue:
+    build: phpdocker/php-fpm
+    container_name: narfex-queue
+    volumes:
+      - ../:/application
+    environment:
+      APP_ENV: local
+      CONTAINER_ROLE: queue
+    networks:
+      - narfex
+
+  narfex-websocket:
+    build: phpdocker/php-fpm
+    container_name: narfex-websocket
+    volumes:
+      - ../:/application
+    ports:
+      - "6001:6001"
+    environment:
+      APP_ENV: local
+      CONTAINER_ROLE: websocket
+    networks:
+      - narfex
+    links:
+      - narfex-redis
+    depends_on:
+      - narfex-redis
+
+networks:
+  narfex:
+    driver: bridge
+
+volumes:
+  narfex-mysql:
+    driver: "local"
+  narfex-redis:
+    driver: "local"
+

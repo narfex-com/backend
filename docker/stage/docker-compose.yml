@@ -1,0 +1,132 @@
+version: "3.5"
+services:
+  edaport-stage-redis:
+    image: redis:alpine
+    container_name: edaport-stage-redis
+    volumes:
+      - edaport-stage-redis:/data
+    ports:
+      - "6379"
+    restart: always
+    networks:
+      - edaport-stage
+
+  edaport-stage-mysql:
+    image: mysql:5.7.22
+    container_name: edaport-stage-mysql
+    working_dir: /application
+    volumes:
+      - edaport-stage-mysql-data:/var/lib/mysql/
+    environment:
+      MYSQL_ROOT_PASSWORD: KBHJ8765ljk767kh
+      MYSQL_DATABASE: app
+    restart: always
+    ports:
+      - "3306:3306"
+    networks:
+      - edaport-stage
+
+  edaport-stage-webserver:
+    image: nginx:latest
+    container_name: edaport-stage-webserver
+    working_dir: /application
+    volumes:
+      - /var/www/edaport/backend:/application
+      - /var/www/frontend:/frontend
+      - /var/www/manager:/manager
+      - /var/www/edaport/storage:/var/www/edaport/storage
+      - ./hosts:/etc/nginx/conf.d
+      - /etc/letsencrypt:/etc/letsencrypt
+      - /var/log/nginx/:/var/log/nginx
+    restart: always
+    ports:
+      - "80:80"
+      - "443:443"
+    networks:
+      - edaport-stage
+    links:
+      - edaport-stage-php-fpm
+      - edaport-stage-websocket
+
+  edaport-stage-php-fpm:
+    build: php-fpm
+    container_name: edaport-stage-php-fpm
+    working_dir: /application
+    restart: always
+    volumes:
+      - /var/www/edaport/backend:/application
+      - /var/www/edaport/storage:/var/www/edaport/storage
+      - /var/www/edaport/composer:/var/www/edaport/composer
+      - ./php-fpm/php-ini-overrides.ini:/etc/php/7.4/fpm/conf.d/99-overrides.ini
+    ports:
+      - "9000"
+    networks:
+      - edaport-stage
+    environment:
+      APP_ENV: production
+      CONTAINER_ROLE: app
+    links:
+      - edaport-stage-redis
+
+  edaport-stage-scheduler:
+    build: php-fpm
+    container_name: edaport-stage-scheduler
+    user: ${CURRENT_UID}
+    restart: always
+    volumes:
+      - /var/www/edaport/backend:/application
+      - /var/www/edaport/composer:/var/www/edaport/composer
+    environment:
+      APP_ENV: production
+      CONTAINER_ROLE: scheduler
+    networks:
+      - edaport-stage
+    links:
+      - edaport-stage-redis
+
+  edaport-stage-queue:
+    build: php-fpm
+    container_name: edaport-stage-queue
+    user: ${CURRENT_UID}
+    restart: always
+    volumes:
+      - /var/www/edaport/backend:/application
+      - /var/www/edaport/composer:/var/www/edaport/composer
+    environment:
+      APP_ENV: production
+      CONTAINER_ROLE: queue
+    networks:
+      - edaport-stage
+    links:
+      - edaport-stage-redis
+
+  edaport-stage-websocket:
+    build: php-fpm
+    container_name: edaport-stage-websocket
+    user: ${CURRENT_UID}
+    restart: always
+    volumes:
+      - /var/www/edaport/backend:/application
+      - /var/www/edaport/composer:/var/www/edaport/composer
+    ports:
+      - "6001"
+    environment:
+      APP_ENV: production
+      CONTAINER_ROLE: websocket
+    networks:
+      - edaport-stage
+    links:
+      - edaport-stage-redis
+    depends_on:
+      - edaport-stage-redis
+
+networks:
+  edaport-stage:
+    driver: bridge
+
+volumes:
+  edaport-stage-mysql-data:
+    driver: "local"
+  edaport-stage-redis:
+    driver: "local"
+
