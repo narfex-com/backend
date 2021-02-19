@@ -52,20 +52,23 @@
                             "application/json": {
                                 "schema": {
                                     "properties": {
-                                        "user": {
+                                        "data": {
+                                            "properties": {
+                                                "user": {
+                                                    "$ref": "#/components/schemas/User"
+                                                },
+                                                "access_token": {
+                                                    "type": "string",
+                                                    "example": "1|f9511jkjasdghylnb347ko"
+                                                }
+                                            },
                                             "type": "object"
-                                        },
-                                        "access_token": {
-                                            "type": "string"
                                         }
                                     },
                                     "type": "object"
                                 }
                             }
                         }
-                    },
-                    "401": {
-                        "description": "Wrong credentials"
                     }
                 }
             }
@@ -114,7 +117,7 @@
                                         "format": "password",
                                         "example": "PassWord12345"
                                     },
-                                    "password_confirmatiln": {
+                                    "password_confirmation": {
                                         "type": "string",
                                         "format": "password",
                                         "example": "PassWord12345"
@@ -127,28 +130,57 @@
                 },
                 "responses": {
                     "200": {
-                        "description": "Successfull registration",
+                        "description": "Successfull register",
                         "content": {
                             "application/json": {
                                 "schema": {
                                     "properties": {
-                                        "user": {
-                                            "$ref": "#/components/schemas/User"
-                                        },
-                                        "access_token": {
-                                            "type": "string"
+                                        "data": {
+                                            "properties": {
+                                                "user": {
+                                                    "$ref": "#/components/schemas/User"
+                                                },
+                                                "access_token": {
+                                                    "type": "string",
+                                                    "example": "1|f9511jkjasdghylnb347ko"
+                                                }
+                                            },
+                                            "type": "object"
                                         }
                                     },
                                     "type": "object"
                                 }
                             }
                         }
-                    },
-                    "400": {
-                        "description": "User with nickname or email already exists"
-                    },
-                    "419": {
-                        "description": "Some of request's data is wrong"
+                    }
+                }
+            }
+        },
+        "/balances": {
+            "get": {
+                "tags": [
+                    "balance"
+                ],
+                "summary": "Get balances",
+                "operationId": "balancesGet",
+                "responses": {
+                    "200": {
+                        "description": "Returns user's balances",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "data": {
+                                            "type": "array",
+                                            "items": {
+                                                "$ref": "#/components/schemas/Balance"
+                                            }
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
                     }
                 }
             }
@@ -162,13 +194,18 @@
                 "operationId": "profileGet",
                 "responses": {
                     "200": {
-                        "description": "Profile",
+                        "description": "Successfull login",
                         "content": {
                             "application/json": {
                                 "schema": {
                                     "properties": {
-                                        "user": {
-                                            "$ref": "#/components/schemas/User"
+                                        "data": {
+                                            "properties": {
+                                                "user": {
+                                                    "$ref": "#/components/schemas/User"
+                                                }
+                                            },
+                                            "type": "object"
                                         }
                                     },
                                     "type": "object"
@@ -182,21 +219,87 @@
     },
     "components": {
         "schemas": {
+            "Balance": {
+                "title": "Balance",
+                "description": "Balance model",
+                "properties": {
+                    "id": {
+                        "title": "id",
+                        "description": "id",
+                        "type": "integer",
+                        "format": "int",
+                        "example": 1
+                    },
+                    "currency": {
+                        "$ref": "#/components/schemas/Currency"
+                    },
+                    "amount": {
+                        "title": "amount",
+                        "description": "balance's amount",
+                        "type": "number",
+                        "format": "float",
+                        "example": 0.0023
+                    },
+                    "address": {
+                        "title": "address",
+                        "description": "balance's address in blockchain",
+                        "type": "string",
+                        "format": "string",
+                        "example": "0x1ka36qerzv8nz72dfg34ak462",
+                        "nullable": true
+                    }
+                },
+                "type": "object",
+                "xml": {
+                    "name": "Balance"
+                }
+            },
+            "Currency": {
+                "title": "Currency",
+                "description": "Currency model",
+                "properties": {
+                    "id": {
+                        "title": "id",
+                        "description": "currency's id",
+                        "type": "integer",
+                        "format": "int",
+                        "example": 1
+                    },
+                    "code": {
+                        "title": "code",
+                        "description": "currency's code",
+                        "type": "string",
+                        "format": "string",
+                        "example": "btc"
+                    },
+                    "name": {
+                        "title": "name",
+                        "description": "currency's name",
+                        "type": "string",
+                        "format": "string",
+                        "example": "Bitcoin"
+                    },
+                    "is_fiat": {
+                        "title": "is_fiat",
+                        "description": "is fiat currency (false is crypto)",
+                        "type": "boolean",
+                        "format": "bool",
+                        "example": false
+                    }
+                },
+                "type": "object",
+                "xml": {
+                    "name": "Currency"
+                }
+            },
             "User": {
+                "title": "User",
+                "description": "User model",
                 "properties": {
                     "id": {
                         "type": "integer",
                         "readOnly": "true",
                         "example": "1"
-                    },
-                    "email": {
-                        "type": "string",
-                        "format": "email",
-                        "example": "email@mail.com"
-                    },
-                    "nickname": {
-                        "type": "string",
-                        "example": "nickname"
                     },
                     "first_name": {
                         "type": "string",
@@ -207,12 +310,41 @@
                         "type": "string",
                         "maxLength": 32,
                         "example": "Doe"
+                    },
+                    "nickname": {
+                        "type": "string",
+                        "maxLength": 32,
+                        "example": "johndoe23"
+                    },
+                    "email": {
+                        "type": "string",
+                        "format": "email",
+                        "example": "email@mail.com"
+                    },
+                    "balances": {
+                        "title": "Balances",
+                        "description": "User's balances",
+                        "type": "array",
+                        "items": {
+                            "$ref": "#/components/schemas/Balance"
+                        }
                     }
                 },
                 "type": "object",
                 "xml": {
                     "name": "User"
                 }
+            }
+        },
+        "responses": {
+            "401": {
+                "description": "Wrong credentials"
+            },
+            "400": {
+                "description": "User with nickname or email already exists"
+            },
+            "419": {
+                "description": "Some of request's data is wrong"
             }
         }
     },

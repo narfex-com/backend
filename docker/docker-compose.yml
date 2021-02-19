@@ -54,6 +54,8 @@ services:
     environment:
       APP_ENV: local
       CONTAINER_ROLE: app
+      XDEBUG_CONFIG: "remote_host=172.29.0.1 idekey=\"PHPSTORM\" remote_connect_back=1 remote_log=\"/var/log/xdebug.log\""
+      PHP_IDE_CONFIG: "serverName=Docker"
 
   narfex-scheduler:
     build: phpdocker/php-fpm

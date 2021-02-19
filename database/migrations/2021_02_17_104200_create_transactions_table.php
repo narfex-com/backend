@@ -15,6 +15,13 @@ class CreateTransactionsTable extends Migration
     {
         Schema::create('transactions', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('user_id')->constrained();
+            $table->unsignedBigInteger('from_currency_id')->nullable();
+            $table->unsignedBigInteger('to_currency_id')->nullable();
+            $table->unsignedBigInteger('from_balance_id')->nullable();
+            $table->unsignedBigInteger('to_balance_id')->nullable();
+            $table->morphs('typeable');
+            $table->decimal('amount', 36, 18);
             $table->timestamps();
         });
     }

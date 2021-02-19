@@ -51,5 +51,8 @@ class RateTest extends TestCase
         $source = app()->make(CoinbaseRateSource::class);
 
         $rate = $source->getRate($fiatCurrency, $cryptoCurrency, new DirectionBuy());
+        $expectedRate = 1 / $rate->getRate();
+        $rate = $rate->getRevertedRate();
+        $this->assertEquals($expectedRate, $rate->getRate());
     }
 }

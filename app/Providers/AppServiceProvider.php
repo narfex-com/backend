@@ -2,6 +2,8 @@
 
 namespace App\Providers;
 
+use App\Models\Exchange;
+use App\Observers\ExchangeObserver;
 use App\Services\Rate\Sources\CoinbaseRateSource;
 use App\Services\Rate\Sources\RateSourceInterface;
 use Illuminate\Support\ServiceProvider;
@@ -25,6 +27,6 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+        Exchange::observe(ExchangeObserver::class);
     }
 }

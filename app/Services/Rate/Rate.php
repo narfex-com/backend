@@ -4,12 +4,16 @@
 namespace App\Services\Rate;
 
 
+use App\Exceptions\Rate\RateException;
 use App\Models\Currency;
 use App\Services\Rate\Directions\Direction;
 use App\Services\Rate\Directions\DirectionBuy;
+use App\Services\Rate\Directions\DirectionSell;
 
 class Rate
 {
+    private const MARGIN = 0.0023;
+
     private Currency $asset;
     private Currency $currency;
     private float $rate;
@@ -23,6 +27,7 @@ class Rate
      * @param Currency $currency
      * @param float $rate
      * @param Direction $direction
+     * @param bool $withFee
      */
     public function __construct(Currency $asset, Currency $currency, float $rate, Direction $direction)
     {
@@ -30,46 +35,73 @@ class Rate
         $this->currency = $currency;
         $this->rate = $rate;
         $this->direction = $direction;
+        \Log::info('Direction', [$this->direction]);
     }
 
-    public function getPrice(float $amount): float
+    public function withFee(): Rate
     {
-        return $amount / $this->rate;
+        $this->isFeeNeeded = true;
+
+        return $this;
     }
 
-    public function getPriceWithFee(float $amount): float
+    public function getPrice(Currency $currency, float $amount): float
     {
-        $rate = $this->getRateWithFee();
-        return $amount / $rate;
+        if (!$currency instanceof $this->asset && !$currency instanceof $this->currency) {
+            throw new RateException('Provided currency is not valid for this rate');
+        }
+
+        if ($this->asset->isCrypto()) {
+            if ($currency === $this->asset) {
+                return $amount * $this->getRate();
+            }
+
+            if ($currency === $this->currency) {
+                $rate = $this->getRate();
+                return $amount / $rate;
+            }
+        }
+
+        if ($this->asset->isFiat()) {
+            if ($currency === $this->asset) {
+                return $amount / $this->getRate();
+            }
+
+            if ($currency === $this->currency) {
+                return $amount * $this->getRate();
+            }
+        }
+
+        throw new RateException();
     }
 
     public function getRate(): float
     {
+        if ($this->isFeeNeeded) {
+            return $this->getRateWithFee();
+        }
+
         return $this->rate;
     }
 
-    public function getRevertedRate(): Rate
+    public function getRevertedRate(): float
     {
-        $rate = 1 / $this->rate;
-        return new self($this->currency, $this->asset, $rate, new DirectionBuy());
+        return 1 / $this->getRate();
     }
 
     private function getRateWithFee(): ?float
     {
-        if ($this->isFeeNeeded) {
-            $fee = $this->rate * $this->fee;
-            if ($this->isBuyDirection()) {
-                return $this->rate + $fee;
-            } else {
-                return $this->rate - $fee;
-            }
+        $fee = $this->rate * $this->fee;
+
+        if ($this->isBuyDirection()) {
+            return $this->rate + $fee;
         }
 
-        return null;
+        return $this->rate - $fee;
     }
 
     private function isBuyDirection(): bool
     {
-        return get_class($this->direction) === DirectionBuy::class;
+        return $this->direction instanceof DirectionBuy;
     }
 }

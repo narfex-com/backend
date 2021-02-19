@@ -1,176 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="ecbfc2c0-1258-4dfa-8bfb-ab7eece00b8a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.editorconfig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.env.example" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gitattributes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.styleci.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_ide_helper.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Console/Kernel.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Exceptions/Handler.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Exceptions/Rate/Coinbase/CannotGetRateException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Exceptions/Rate/RateException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/ResetPasswordController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Balance/BalanceController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Controller.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/User/UserController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/User/VerificationController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Middleware/Authenticate.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Middleware/EncryptCookies.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Middleware/JsonResponse.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Middleware/PreventRequestsDuringMaintenance.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Middleware/RedirectIfAuthenticated.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Middleware/TrimStrings.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Middleware/TrustHosts.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Middleware/TrustProxies.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/Auth/LoginRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/Auth/RegisterRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Resources/Balance/BalanceResource.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Resources/Currency/CurrencyResource.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Resources/User/UserResource.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Responses/JsonResponse.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/Balance.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/Currency.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/Translation.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Providers/AuthServiceProvider.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Providers/BroadcastServiceProvider.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Providers/EventServiceProvider.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Services/Balance/BalanceManager.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Services/Balance/BalanceService.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Services/Balance/CurrencyServices/BaseCurrencyService.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Services/Balance/CurrencyServices/BtcService.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Services/Balance/CurrencyServices/CurrencyService.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Services/Balance/CurrencyServices/IdrService.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Services/Exchange/Exchange.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Services/Exchange/ExchangeBuilder.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Services/Exchange/ExchangeService.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Services/Rate/Directions/Direction.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Services/Rate/Directions/DirectionBuy.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Services/Rate/Directions/DirectionSell.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Services/Rate/Rate.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Services/Rate/RateService.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Services/Rate/Sources/CoinbaseRateSource.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Services/Rate/Sources/RateSource.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Services/Rate/Sources/RateSourceInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/artisan" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bootstrap/app.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bootstrap/cache/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/auth.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/broadcasting.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/cache.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/cors.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/database.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/filesystems.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/hashing.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/l5-swagger.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/logging.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/mail.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/queue.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/sanctum.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/services.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/session.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/view.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/factories/BalanceFactory.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/factories/CurrencyFactory.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/factories/UserFactory.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_100000_create_password_resets_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2019_08_19_000000_create_failed_jobs_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2019_12_14_000001_create_personal_access_tokens_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2021_02_15_072154_create_currencies_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2021_02_15_072155_create_balances_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2021_02_15_073034_create_translations_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/seeders/CurrencySeeder.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker/develop/docker-compose.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker/develop/hosts/edaport.conf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker/develop/nginx/nginx.conf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker/develop/php-fpm/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker/develop/php-fpm/cron/crontab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker/develop/php-fpm/php-ini-overrides.ini" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker/develop/php-fpm/start.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker/develop/run.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker/docker-compose.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker/nginx/log/access.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker/nginx/log/application.access.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker/nginx/log/error.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker/phpdocker/nginx/default.conf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker/phpdocker/php-fpm/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker/phpdocker/php-fpm/cron/crontab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker/phpdocker/php-fpm/php-ini-overrides.ini" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker/phpdocker/php-fpm/start.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker/production/docker-compose.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker/production/hosts/edaport.conf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker/production/nginx/nginx.conf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker/production/php-fpm/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker/production/php-fpm/cron/crontab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker/production/php-fpm/php-ini-overrides.ini" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker/production/php-fpm/start.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker/production/run.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker/stage/docker-compose.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker/stage/hosts/edaport.conf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker/stage/nginx/logs/access.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker/stage/nginx/logs/application.access.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker/stage/nginx/logs/error.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker/stage/nginx/nginx.conf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker/stage/php-fpm/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker/stage/php-fpm/cron/crontab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker/stage/php-fpm/php-ini-overrides.ini" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker/stage/php-fpm/start.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker/stage/run.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/phpunit.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/.htaccess" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/robots.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/web.config" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/css/app.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/bootstrap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/lang/en/auth.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/lang/en/pagination.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/lang/en/passwords.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/lang/en/validation.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/routes/channels.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/routes/console.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/app/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/app/public/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/framework/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/framework/cache/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/framework/cache/data/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/framework/sessions/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/framework/testing/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/framework/views/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/logs/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/CreatesApplication.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/Feature/Auth/LoginTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/Feature/Auth/RegisterTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/Feature/Balance/BalanceTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/Feature/ExampleTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/Feature/Profile/ProfileTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/Feature/Rate/RateTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/TestCase.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/Unit/ExampleTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webpack.mix.js" afterDir="false" />
+    <list default="true" id="ecbfc2c0-1258-4dfa-8bfb-ab7eece00b8a" name="Default Changelist" comment="initial">
+      <change afterPath="$PROJECT_DIR$/app/Http/Documentation/Balance/Balance.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Documentation/Currency/Currency.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Documentation/User/User.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/Withdrawal.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/WithdrawalMethod.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Observers/ExchangeObserver.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2021_02_17_103433_create_withdrawal_methods_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2021_02_17_103434_create_withdrawals_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/Feature/Exchange/ExchangeTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/5f3483c7-6367-47f4-9010-f4bf538973d2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/5f3483c7-6367-47f4-9010-f4bf538973d2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_ide_helper.php" beforeDir="false" afterPath="$PROJECT_DIR$/_ide_helper.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Balance/BalanceController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Balance/BalanceController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/User/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/User/UserController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Resources/Balance/BalanceResource.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Resources/Balance/BalanceResource.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Resources/Currency/CurrencyResource.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Resources/Currency/CurrencyResource.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Resources/User/UserResource.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Resources/User/UserResource.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Currency.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Currency.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Topup.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Topup.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/TopupMethod.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/TopupMethod.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Transaction.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Transaction.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/TransactionStatus.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Exchange.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/WithdrawalRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/WithdrawalRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Exchange/ExchangeService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Services/Exchange/ExchangeService.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Rate/Rate.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Services/Rate/Rate.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Rate/RateService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Services/Rate/RateService.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Rate/Sources/CoinbaseRateSource.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Services/Rate/Sources/CoinbaseRateSource.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Rate/Sources/RateSource.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Services/Rate/Sources/RateSource.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/Rate/Sources/RateSourceInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Services/Rate/Sources/RateSourceInterface.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/factories/UserFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/UserFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2021_02_16_083258_create_transactions_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_02_17_104200_create_transactions_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2021_02_16_083458_create_transaction_statuses_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_02_17_065253_create_exchanges_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2021_02_16_083517_create_topup_methods_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_02_17_103507_create_topup_methods_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2021_02_16_083525_create_topups_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_02_17_103513_create_topups_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/nginx/log/application.access.log" beforeDir="false" afterPath="$PROJECT_DIR$/docker/nginx/log/application.access.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/phpdocker/php-fpm/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/docker/phpdocker/php-fpm/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/phpdocker/php-fpm/php-ini-overrides.ini" beforeDir="false" afterPath="$PROJECT_DIR$/docker/phpdocker/php-fpm/php-ini-overrides.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/api-docs/api-docs.json" beforeDir="false" afterPath="$PROJECT_DIR$/storage/api-docs/api-docs.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Feature/Rate/RateTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/Rate/RateTest.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -179,10 +58,21 @@
   </component>
   <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
-    <execution />
+    <execution>
+      <interpreter composer="composer" />
+    </execution>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="PhpServers">
+    <servers>
+      <server host="127.0.0.1" id="c692f531-821c-41d8-b1da-3642d920fa57" name="Docker" port="8080" use_path_mappings="true">
+        <path_mappings>
+          <mapping local-root="$PROJECT_DIR$/public/index.php" remote-root="/application/index.php" />
+        </path_mappings>
+      </server>
+    </servers>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="narfex-php-fpm">
     <include_path>
@@ -310,9 +200,7 @@
       <path value="$PROJECT_DIR$/vendor/darkaonline/l5-swagger" />
     </include_path>
   </component>
-  <component name="ProblemsViewState">
-    <option name="selectedIndex" value="1" />
-  </component>
+  <component name="PhpXdebugProxy" ide_key="docker" host="127.0.0.1" port="9003" />
   <component name="ProjectId" id="1oVXHjj4wUMvXBPsKYhWmpdXS0I" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -335,36 +223,49 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
-    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.php.debug.xdebug.proxy" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/Http" />
+    </key>
   </component>
-  <component name="RunManager" selected="PHPUnit.RateTest.test_fiat_to_crypto">
-    <configuration name="RateTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Feature\Rate\RateTest" configuration_file="/application/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/Rate/RateTest.php" scope="Class" />
+  <component name="RunManager" selected="PHPUnit.phpunit.xml">
+    <configuration name="ExchangeTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\Exchange\ExchangeTest" configuration_file="/application/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/Exchange/ExchangeTest.php" scope="Class" />
       <method v="2" />
     </configuration>
-    <configuration name="RateTest.test_coinbase" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Feature\Rate\RateTest" configuration_file="/application/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/Rate/RateTest.php" method="test_coinbase" scope="Method" />
+    <configuration name="ExchangeTest.test_exchange_crypto_to_fiat_with_from_amount" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\Exchange\ExchangeTest" configuration_file="/application/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/Exchange/ExchangeTest.php" method="test_exchange_crypto_to_fiat_with_from_amount" scope="Method" />
       <method v="2" />
     </configuration>
-    <configuration name="RateTest.test_fiat_to_crypto" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Feature\Rate\RateTest" configuration_file="/application/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/Rate/RateTest.php" method="test_fiat_to_crypto" scope="Method" />
+    <configuration name="ExchangeTest.test_exchange_crypto_to_fiat_with_to_amount" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\Exchange\ExchangeTest" configuration_file="/application/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/Exchange/ExchangeTest.php" method="test_exchange_crypto_to_fiat_with_to_amount" scope="Method" />
+      <method v="2" />
+    </configuration>
+    <configuration name="ExchangeTest.test_exchange_fiat_to_crypto_with_from_amount" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\Exchange\ExchangeTest" configuration_file="/application/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/Exchange/ExchangeTest.php" method="test_exchange_fiat_to_crypto_with_from_amount" scope="Method" />
+      <method v="2" />
+    </configuration>
+    <configuration name="ExchangeTest.test_exchange_fiat_to_crypto_with_to_amount" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\Exchange\ExchangeTest" configuration_file="/application/phpunit.xml" file="$PROJECT_DIR$/tests/Feature/Exchange/ExchangeTest.php" method="test_exchange_fiat_to_crypto_with_to_amount" scope="Method" />
       <method v="2" />
     </configuration>
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
-      <TestRunner scope="XML" />
+      <TestRunner configuration_file="/application/phpunit.xml" scope="XML" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="PHPUnit.RateTest.test_fiat_to_crypto" />
-        <item itemvalue="PHPUnit.RateTest" />
-        <item itemvalue="PHPUnit.RateTest.test_coinbase" />
+        <item itemvalue="PHPUnit.ExchangeTest.test_exchange_crypto_to_fiat_with_from_amount" />
+        <item itemvalue="PHPUnit.ExchangeTest" />
+        <item itemvalue="PHPUnit.ExchangeTest.test_exchange_fiat_to_crypto_with_from_amount" />
+        <item itemvalue="PHPUnit.ExchangeTest.test_exchange_crypto_to_fiat_with_to_amount" />
+        <item itemvalue="PHPUnit.ExchangeTest.test_exchange_fiat_to_crypto_with_to_amount" />
       </list>
     </recent_temporary>
   </component>
@@ -377,8 +278,24 @@
       <option name="presentableId" value="Default" />
       <updated>1613372646664</updated>
       <workItem from="1613372648932" duration="3378000" />
-      <workItem from="1613376461465" duration="24300000" />
+      <workItem from="1613376461465" duration="58619000" />
+      <workItem from="1613717112472" duration="1054000" />
     </task>
+    <task id="LOCAL-00001" summary="initial">
+      <created>1613538179013</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1613538179013</updated>
+    </task>
+    <task id="LOCAL-00002" summary="initial">
+      <created>1613538189943</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1613538189943</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -396,8 +313,56 @@
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="initial" />
+    <option name="LAST_COMMIT_MESSAGE" value="initial" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/app/Services/Exchange/ExchangeService.php</url>
+          <line>29</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/app/Services/Exchange/ExchangeService.php</url>
+          <line>32</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/app/Services/Exchange/ExchangeService.php</url>
+          <line>36</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/app/Services/Rate/Rate.php</url>
+          <line>93</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/app/Services/Rate/Rate.php</url>
+          <line>96</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/app/Services/Rate/Rate.php</url>
+          <line>99</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/app/Services/Rate/Rate.php</url>
+          <line>36</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
     <select />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/narfex@ExchangeTest.xml" NAME="ExchangeTest Coverage Results" MODIFIED="1613663730786" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="PhpCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

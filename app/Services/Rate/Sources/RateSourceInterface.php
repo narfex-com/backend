@@ -10,5 +10,5 @@ use App\Services\Rate\Rate;
 
 interface RateSourceInterface
 {
-    public function getRate(Currency $asset, Currency $currency, Direction $direction): Rate;
+    public function getRate(Currency $asset, Currency $currency, ?Direction $direction = null): Rate;
 }

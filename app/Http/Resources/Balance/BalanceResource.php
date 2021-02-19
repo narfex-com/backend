@@ -6,6 +6,10 @@ use App\Http\Resources\Currency\CurrencyResource;
 use App\Models\Balance;
 use Illuminate\Http\Resources\Json\JsonResource;
 
+/**
+ * Class BalanceCollection
+ * @package App\Http\Resources\Balance
+ */
 class BalanceResource extends JsonResource
 {
     /**

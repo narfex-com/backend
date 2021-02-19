@@ -1,9 +1,12 @@
 <?php
 
+
 namespace App\Http\Resources\Currency;
+
 
 use App\Models\Currency;
 use Illuminate\Http\Resources\Json\JsonResource;
+
 
 class CurrencyResource extends JsonResource
 {

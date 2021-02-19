@@ -16,10 +16,14 @@ class UserController extends Controller
      * tags={"profile"},
      * @OA\Response(
      *    response=200,
-     *    description="Profile",
+     *    description="Successfull login",
      *    @OA\JsonContent(
-     *       @OA\Property(property="user", type="object", ref="#/components/schemas/User")
+     *       @OA\Property(property="data", type="object",
+     *              @OA\Property(property="user", type="object", ref="#/components/schemas/User"),
+     *          )
+     *       )
      *    )
+     *    ),
      * ),
      * )
      */

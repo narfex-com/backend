@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateTopupMethodsTable extends Migration
+class CreateWithdrawalMethodsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,8 +13,12 @@ class CreateTopupMethodsTable extends Migration
      */
     public function up()
     {
-        Schema::create('topup_methods', function (Blueprint $table) {
+        Schema::create('withdrawal_methods', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('currency_id')->constrained();
+            $table->string('name');
+            $table->float('fee');
+            $table->decimal('limit', 36, 18);
             $table->timestamps();
         });
     }
@@ -26,6 +30,6 @@ class CreateTopupMethodsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('topup_methods');
+        Schema::dropIfExists('withdrawal_methods');
     }
 }

@@ -30,4 +30,14 @@ use Illuminate\Database\Eloquent\Model;
 class Currency extends Model
 {
     use HasFactory;
+
+    public function isFiat(): bool
+    {
+        return $this->is_fiat;
+    }
+
+    public function isCrypto(): bool
+    {
+        return !$this->is_fiat;
+    }
 }

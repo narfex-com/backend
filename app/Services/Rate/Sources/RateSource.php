@@ -19,9 +19,26 @@ class RateSource
     /** @var mixed|\Redis  */
     protected $redis;
 
+    protected static ?float $testRate = null;
+
     public function __construct(Client $client)
     {
         $this->client = $client;
         $this->redis = Redis::connection()->client();
+    }
+
+
+    public static function setTestRate(float $rate)
+    {
+        if (app()->environment() !== 'testing') {
+            throw new \Exception('You can not set test rate in non-testing environment');
+        }
+
+        self::$testRate = $rate;
+    }
+
+    public static function unsetTestRate()
+    {
+        self::$testRate = null;
     }
 }

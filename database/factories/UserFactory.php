@@ -50,11 +50,17 @@ class UserFactory extends Factory
         return $this->afterCreating(function (User $user) {
             $currencies = Currency::whereIsEnabled(true)->get();
             foreach ($currencies as $currency) {
+                $amount = null;
+                if ($currency->is_fiat) {
+                    $amount = 500000;
+                } else {
+                    $amount = 2;
+                }
                 Balance::factory()->create([
                     'user_id' => $user->id,
                     'currency_id' => $currency->id,
                     'address' => !$currency->is_fiat ? Str::random(40) : null,
-                    'amount' => rand(0, 20)
+                    'amount' => $amount
                 ]);
             }
         });

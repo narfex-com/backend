@@ -32,8 +32,12 @@ class LoginController extends Controller
      *    response=200,
      *    description="Successfull login",
      *    @OA\JsonContent(
-     *       @OA\Property(property="user", type="object"),
-     *       @OA\Property(property="access_token", type="string"),
+     *       @OA\Property(property="data", type="object",
+     *              @OA\Property(property="user", type="object", ref="#/components/schemas/User"),
+     *              @OA\Property(property="access_token", type="string", example="1|f9511jkjasdghylnb347ko"),
+     *          )
+     *       )
+     *    )
      *    ),
      * ),
      *

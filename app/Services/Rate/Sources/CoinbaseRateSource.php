@@ -7,13 +7,14 @@ namespace App\Services\Rate\Sources;
 use App\Exceptions\Rate\Coinbase\CannotGetRateException;
 use App\Models\Currency;
 use App\Services\Rate\Directions\Direction;
+use App\Services\Rate\Directions\DirectionBuy;
+use App\Services\Rate\Directions\DirectionSell;
 use App\Services\Rate\Rate;
 use GuzzleHttp\Exception\ClientException;
-use GuzzleHttp\Exception\GuzzleException;
 
 class CoinbaseRateSource extends RateSource implements RateSourceInterface
 {
-    public function getRate(Currency $asset, Currency $currency, Direction $direction): Rate
+    public function getRate(Currency $asset, Currency $currency, ?Direction $direction = null): Rate
     {
         $fiatOnlyCurrencies = $asset->is_fiat && $currency->is_fiat;
         $cryptoOnlyCurrencies = !$asset->is_fiat && !$currency->is_fiat;
@@ -21,11 +22,23 @@ class CoinbaseRateSource extends RateSource implements RateSourceInterface
             throw new CannotGetRateException('Can not get rate if both of currencies are with same type');
         }
 
+        \Log::info('Pair', ["{$asset->code}-{$currency->code}"]);
+        \Log::info('Coinbase class direction argument', [$direction]);
+        if (!$direction) {
+            $direction = $asset->isFiat() ? new DirectionBuy() : new DirectionSell();
+        }
+
+        \Log::info('Coinbase class moderated direction', [$direction]);
+
         $this->asset = $asset;
         $this->currency = $currency;
         $this->direction = $direction;
 
-        $cacheKey = 'exchange_rate_' . $asset->code . '_' . $currency->code;
+        if (app()->environment() === 'testing' && self::$testRate) {
+            return new Rate($this->asset, $this->currency, self::$testRate, $this->direction);
+        }
+
+        $cacheKey = "exchange_rate_{$this->asset->code}_{$this->currency->code}_{$this->direction->getDirection()}";
 
         $rate = $this->redis->get($cacheKey);
         if ($rate && $rate > 0) {
