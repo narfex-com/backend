@@ -24,6 +24,7 @@ class CoinbaseRateSource extends RateSource implements RateSourceInterface
             throw new CannotGetRateException('Can not get rate if both of currencies are with same type');
         }
 
+        //test push
         if ($this->isExchangeRateRequested) {
             $direction = $asset->isFiat()
                 ? new DirectionBuy()
