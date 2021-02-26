@@ -12,8 +12,6 @@ use App\Services\Rate\Directions\DirectionSell;
 
 class Rate
 {
-    private const MARGIN = 0.0023;
-
     private Currency $asset;
     private Currency $currency;
     private float $rate;
@@ -27,7 +25,6 @@ class Rate
      * @param Currency $currency
      * @param float $rate
      * @param Direction $direction
-     * @param bool $withFee
      */
     public function __construct(Currency $asset, Currency $currency, float $rate, Direction $direction)
     {
@@ -35,7 +32,6 @@ class Rate
         $this->currency = $currency;
         $this->rate = $rate;
         $this->direction = $direction;
-        \Log::info('Direction', [$this->direction]);
     }
 
     public function withFee(): Rate
@@ -64,11 +60,11 @@ class Rate
 
         if ($this->asset->isFiat()) {
             if ($currency === $this->asset) {
-                return $amount / $this->getRate();
+                return $amount * $this->getRate();
             }
 
             if ($currency === $this->currency) {
-                return $amount * $this->getRate();
+                return $amount / $this->getRate();
             }
         }
 
@@ -77,11 +73,13 @@ class Rate
 
     public function getRate(): float
     {
+        $rate = $this->rate;
+
         if ($this->isFeeNeeded) {
-            return $this->getRateWithFee();
+            $rate = $this->getRateWithFee();
         }
 
-        return $this->rate;
+        return $this->asset->isFiat() ? 1 / $rate : $rate;
     }
 
     public function getRevertedRate(): float

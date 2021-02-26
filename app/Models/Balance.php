@@ -32,8 +32,29 @@ class Balance extends Model
 {
     use HasFactory;
 
+    protected $fillable = [
+        'user_id',
+        'currency_id'
+    ];
+
     public function currency()
     {
         return $this->belongsTo(Currency::class);
+    }
+
+    public function checkFunds(float $amount): bool
+    {
+        $balance = \DB::table('balances')->select(['id', 'amount'])->where('id', $this->id)->first();
+        return $balance->amount > $amount;
+    }
+
+    public function reduceAmount(float $amount)
+    {
+        \DB::table('balances')->where('id', $this->id)->decrement('amount', $amount);
+    }
+
+    public function increaseAmount(float $amount)
+    {
+        \DB::table('balances')->where('id', $this->id)->increment('amount', $amount);
     }
 }

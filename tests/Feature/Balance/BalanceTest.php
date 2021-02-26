@@ -2,6 +2,7 @@
 
 namespace Tests\Feature\Balance;
 
+use App\Models\Balance;
 use App\Models\User;
 use Database\Seeders\CurrencySeeder;
 use Illuminate\Foundation\Testing\RefreshDatabase;
@@ -22,7 +23,6 @@ class BalanceTest extends TestCase
     {
         $this->seed(CurrencySeeder::class);
         $user = User::factory()->create();
-
 
         Sanctum::actingAs($user);
         $response = $this->get(route('balances.index'));

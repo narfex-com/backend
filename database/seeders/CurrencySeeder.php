@@ -14,22 +14,26 @@ class CurrencySeeder extends Seeder
      */
     public function run()
     {
-        Currency::insert([
+        Currency::firstOrCreate(
             [
                 'code' => 'btc',
                 'name' => 'Bitcoin',
                 'is_fiat' => false
-            ],
+            ]
+        );
+        Currency::firstOrCreate(
             [
                 'code' => 'rub',
                 'name' => 'Russian Ruble',
                 'is_fiat' => true
-            ],
+            ]
+        );
+        Currency::firstOrCreate(
             [
                 'code' => 'idr',
                 'name' => 'Indonesian Rupiah',
                 'is_fiat' => true
-            ],
-        ]);
+            ]
+        );
     }
 }

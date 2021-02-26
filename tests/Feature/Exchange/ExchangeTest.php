@@ -38,7 +38,7 @@ class ExchangeTest extends TestCase
         /** @var RateService $rateService */
         $rateService = app()->make(RateService::class);
 
-        $currentRate = $rateService->getRate($fromBalance->currency, $toBalance->currency)->withFee();
+        $currentRate = $rateService->getExchangeRate($fromBalance->currency, $toBalance->currency)->withFee();
         $rate = $currentRate->getRate();
 
         $expectedAmount = $fromAmount * $rate;
@@ -72,7 +72,7 @@ class ExchangeTest extends TestCase
         /** @var RateService $rateService */
         $rateService = app()->make(RateService::class);
 
-        $currentRate = $rateService->getRate($fromBalance->currency, $toBalance->currency)->withFee();
+        $currentRate = $rateService->getExchangeRate($fromBalance->currency, $toBalance->currency)->withFee();
         $expectedAmount = $currentRate->getPrice($toBalance->currency, $toAmount);
         $exchange = $exchangeService->exchange($user, $fromBalance, $toBalance, $fromAmount, $toAmount, false);
 
@@ -103,10 +103,10 @@ class ExchangeTest extends TestCase
         /** @var RateService $rateService */
         $rateService = app()->make(RateService::class);
 
-        $currentRate = $rateService->getRate($fromBalance->currency, $toBalance->currency)->withFee();
+        $currentRate = $rateService->getExchangeRate($fromBalance->currency, $toBalance->currency)->withFee();
         $rate = $currentRate->getRate();
 
-        $expectedAmount = $fromAmount / $rate;
+        $expectedAmount = $fromAmount * $rate;
 
         $exchange = $exchangeService->exchange($user, $fromBalance, $toBalance, $fromAmount, $toAmount, true);
 
@@ -137,8 +137,8 @@ class ExchangeTest extends TestCase
         /** @var RateService $rateService */
         $rateService = app()->make(RateService::class);
 
-        $currentRate = $rateService->getRate($fromBalance->currency, $toBalance->currency)->withFee();
-        $expectedAmount = $toAmount * $currentRate->getRate();
+        $currentRate = $rateService->getExchangeRate($fromBalance->currency, $toBalance->currency)->withFee();
+        $expectedAmount = $toAmount / $currentRate->getRate();
         $exchange = $exchangeService->exchange($user, $fromBalance, $toBalance, $fromAmount, $toAmount, false);
 
         $this->assertEquals(Exchange::class, get_class($exchange));

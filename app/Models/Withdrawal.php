@@ -40,4 +40,6 @@ use Illuminate\Database\Eloquent\Model;
 class Withdrawal extends Model
 {
     use HasFactory;
+
+    public const TRANSACTION_TYPE = 'withdrawal';
 }

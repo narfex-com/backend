@@ -13,7 +13,7 @@ class RateSource
 {
     protected Currency $asset;
     protected Currency $currency;
-    protected Direction $direction;
+    protected ?Direction $direction = null;
 
     protected Client $client;
     /** @var mixed|\Redis  */

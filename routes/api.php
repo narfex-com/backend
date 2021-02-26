@@ -3,6 +3,9 @@
 use App\Http\Controllers\Auth\RegisterController;
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\Balance\BalanceController;
+use App\Http\Controllers\Currency\CurrencyController;
+use App\Http\Controllers\Exchange\ExchangeController;
+use App\Http\Controllers\Transaction\TransactionController;
 use App\Http\Controllers\User\UserController;
 use Illuminate\Support\Facades\Route;
 
@@ -22,6 +25,8 @@ Route::prefix('/auth')->group(function(){
     Route::post('/register', [RegisterController::class, 'register'])->name('register');
 });
 
+Route::get('/currencies', [CurrencyController::class, 'index'])->name('currencies.index');
+
 Route::middleware('auth:sanctum')->group(function(){
     Route::prefix('/profile')->as('profile.')->group(function(){
         Route::get('/', [UserController::class, 'index'])->name('index');
@@ -29,5 +34,14 @@ Route::middleware('auth:sanctum')->group(function(){
 
     Route::prefix('/balances')->as('balances.')->group(function(){
         Route::get('/', [BalanceController::class, 'index'])->name('index');
+        Route::post('/{currency}', [BalanceController::class, 'create'])->name('create');
+    });
+
+    Route::prefix('/exchanges')->as('exchanges.')->group(function(){
+        Route::post('/', [ExchangeController::class, 'exchange'])->name('create');
+    });
+
+    Route::prefix('/transactions')->as('transactions.')->group(function(){
+        Route::get('/', [TransactionController::class, 'index'])->name('index');
     });
 });

@@ -20,6 +20,15 @@ class RateService
 
     public function getRate(Currency $asset, Currency $currency, ?Direction $direction = null): Rate
     {
+        if (!$direction) {
+            $direction = new DirectionBuy();
+        }
+
         return $this->rateSource->getRate($asset, $currency, $direction);
+    }
+
+    public function getExchangeRate(Currency $asset, Currency $currency): Rate
+    {
+        return $this->rateSource->getExchangeRate($asset, $currency);
     }
 }

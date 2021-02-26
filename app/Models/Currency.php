@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
@@ -26,10 +27,16 @@ use Illuminate\Database\Eloquent\Model;
  * @method static \Illuminate\Database\Eloquent\Builder|Currency whereName($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Currency whereUpdatedAt($value)
  * @mixin \Eloquent
+ * @method static Builder|Currency available()
  */
 class Currency extends Model
 {
     use HasFactory;
+
+    public function scopeAvailable(Builder $query)
+    {
+        $query->where('is_enabled', true);
+    }
 
     public function isFiat(): bool
     {

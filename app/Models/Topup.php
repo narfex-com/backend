@@ -36,4 +36,6 @@ use Illuminate\Database\Eloquent\Model;
 class Topup extends Model
 {
     use HasFactory;
+
+    public const TRANSACTION_TYPE = 'topup';
 }

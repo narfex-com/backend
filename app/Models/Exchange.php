@@ -47,6 +47,8 @@ class Exchange extends Model
 {
     use HasFactory;
 
+    public const TRANSACTION_TYPE = 'exchange';
+
     const EXCHANGE_STATUS_CREATED = 1;
     const EXCHANGE_STATUS_SUCCESSFUL = 2;
     const EXCHANGE_STATUS_DECLINED = 3;

@@ -18,9 +18,9 @@ class Controller extends BaseController
 {
     protected JsonResponse $response;
 
-    public function __construct(JsonResponse $jsonResponse)
+    public function __construct()
     {
-        $this->response = $jsonResponse;
+        $this->response = app()->make(JsonResponse::class);
     }
 
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;

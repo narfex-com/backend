@@ -27,7 +27,7 @@ class ExchangeService
             throw new AccessViolationException();
         }
 
-        $rate = $this->rateService->getRate($fromBalance->currency, $toBalance->currency)->withFee();
+        $rate = $this->rateService->getExchangeRate($fromBalance->currency, $toBalance->currency)->withFee();
 
         if ($assetAmount) {
             $toAmount = $rate->getPrice($fromBalance->currency, $fromAmount);
@@ -37,7 +37,7 @@ class ExchangeService
             $fromAmount = $rate->getPrice($toBalance->currency, $toAmount);
         }
 
-        if ($fromBalance->amount < $fromAmount) {
+        if (!$fromBalance->checkFunds($fromAmount)) {
             throw new InsufficientFundsException();
         }
 
@@ -45,6 +45,8 @@ class ExchangeService
          * @var ExchangeModel
          */
         return DB::transaction(function() use ($user, $fromBalance, $toBalance, $fromAmount, $toAmount, $rate){
+            $fromBalance->reduceAmount($fromAmount);
+
             $exchange = new ExchangeModel();
             $exchange->rate = $rate->getRate();
             $exchange->user()->associate($user);

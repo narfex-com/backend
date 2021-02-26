@@ -44,6 +44,6 @@ class JsonResponse
             );
         }
 
-        return $response;
+        return $next($request);
     }
 }
