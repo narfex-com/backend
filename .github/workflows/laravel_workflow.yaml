@@ -30,7 +30,7 @@ jobs:
         # Docker Hub image
         image: redis
         ports:
-          - 66379:6379
+          - 6379:6379
         # Set health checks to wait until redis has started
         options: >-
           --health-cmd "redis-cli ping"
@@ -102,7 +102,7 @@ jobs:
           DB_DATABASE: db_test_laravel
           DB_PORT: 33306
           DB_USER: root
-          REDIS_PORT: 66379
+          REDIS_PORT: 6379
           REDIS_HOST: redis
 
         run: vendor/bin/phpunit --testdox
