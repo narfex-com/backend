@@ -103,6 +103,7 @@ jobs:
           DB_PORT: 33306
           DB_USER: root
           REDIS_PORT: 66379
+          REDIS_HOST: redis
 
         run: vendor/bin/phpunit --testdox
 
