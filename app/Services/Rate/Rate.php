@@ -90,7 +90,11 @@ class Rate
             $rate = $this->getRateWithFee();
         }
 
-        return (float) $this->asset->isFiat() ? 1 / $rate : $rate;
+        if ($this->asset->isCrypto()) {
+            return NumberFormatter::formatCurrency($rate, false);
+        } else {
+            return 1 / $rate;
+        }
     }
 
     public function getRevertedRate(): float
