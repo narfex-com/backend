@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ecbfc2c0-1258-4dfa-8bfb-ab7eece00b8a" name="Default Changelist" comment="fix redis github actions service">
-      <change beforePath="$PROJECT_DIR$/app/Services/Rate/Rate.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Services/Rate/Rate.php" afterDir="false" />
+    <list default="true" id="ecbfc2c0-1258-4dfa-8bfb-ab7eece00b8a" name="Default Changelist" comment="fix tests">
+      <change beforePath="$PROJECT_DIR$/.github/workflows/laravel_workflow.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/laravel_workflow.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -239,7 +240,7 @@
       <workItem from="1613372648932" duration="3378000" />
       <workItem from="1613376461465" duration="58619000" />
       <workItem from="1613717112472" duration="5468000" />
-      <workItem from="1613825126224" duration="26298000" />
+      <workItem from="1613825126224" duration="26804000" />
     </task>
     <task id="LOCAL-00001" summary="initial">
       <created>1613538179013</created>
@@ -332,7 +333,14 @@
       <option name="project" value="LOCAL" />
       <updated>1614348434266</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="fix tests">
+      <created>1614348923745</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1614348923745</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -358,7 +366,8 @@
     <MESSAGE value="add redis to workflow" />
     <MESSAGE value="fix redis ports" />
     <MESSAGE value="fix redis github actions service" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix redis github actions service" />
+    <MESSAGE value="fix tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix tests" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
