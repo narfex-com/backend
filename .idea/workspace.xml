@@ -4,27 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ecbfc2c0-1258-4dfa-8bfb-ab7eece00b8a" name="Default Changelist" comment="fixed exchange tests; added balances &amp; rates">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Rate/RateController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/querydetector.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/narfex.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/narfex.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/JsonResponse.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Requests/Auth/RegisterRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/Auth/RegisterRequest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Responses/JsonResponse.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Responses/JsonResponse.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Services/Rate/Rate.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Services/Rate/Rate.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/cors.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/cors.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/nginx/log/application.access.log" beforeDir="false" afterPath="$PROJECT_DIR$/docker/nginx/log/application.access.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/nginx/log/error.log" beforeDir="false" afterPath="$PROJECT_DIR$/docker/nginx/log/error.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Feature/Auth/LoginTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/Auth/LoginTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Feature/Exchange/ExchangeTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/Exchange/ExchangeTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Feature/Rate/RateTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/Rate/RateTest.php" afterDir="false" />
+    <list default="true" id="ecbfc2c0-1258-4dfa-8bfb-ab7eece00b8a" name="Default Changelist" comment="work">
+      <change beforePath="$PROJECT_DIR$/.github/workflows/laravel_workflow.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/laravel_workflow.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -208,6 +189,7 @@
       <recent name="$PROJECT_DIR$" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/.github/workflows" />
       <recent name="$PROJECT_DIR$/app/Http" />
     </key>
   </component>
@@ -257,7 +239,7 @@
       <workItem from="1613372648932" duration="3378000" />
       <workItem from="1613376461465" duration="58619000" />
       <workItem from="1613717112472" duration="5468000" />
-      <workItem from="1613825126224" duration="25035000" />
+      <workItem from="1613825126224" duration="25314000" />
     </task>
     <task id="LOCAL-00001" summary="initial">
       <created>1613538179013</created>
@@ -287,7 +269,21 @@
       <option name="project" value="LOCAL" />
       <updated>1614318067973</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="work">
+      <created>1614347120357</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1614347120357</updated>
+    </task>
+    <task id="LOCAL-00006" summary="work">
+      <created>1614347333585</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1614347333585</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -309,7 +305,8 @@
     <MESSAGE value="initial" />
     <MESSAGE value="add exchange and documentation" />
     <MESSAGE value="fixed exchange tests; added balances &amp; rates" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed exchange tests; added balances &amp; rates" />
+    <MESSAGE value="work" />
+    <option name="LAST_COMMIT_MESSAGE" value="work" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
