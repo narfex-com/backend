@@ -129,6 +129,7 @@
       <excludeFolder url="file://$MODULE_DIR$/vendor/zircote/swagger-php" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/swagger-api/swagger-ui" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/darkaonline/l5-swagger" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/beyondcode/laravel-query-detector" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

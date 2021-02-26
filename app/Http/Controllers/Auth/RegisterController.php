@@ -61,7 +61,10 @@ class RegisterController extends Controller
             ->orWhere('nickname', $request->get('nickname'))
             ->first();
 
+        \Log::info('User exists before', [$userExists]);
         if ($userExists) {
+            \Log::info('User exists after', [$userExists]);
+
             return $this->response->withErrors([
                 'message' => 'Email or nickname already exists'
             ])->build();

@@ -5,6 +5,7 @@ namespace App\Services\Rate;
 
 
 use App\Exceptions\Rate\RateException;
+use App\Helpers\NumberFormatter;
 use App\Models\Currency;
 use App\Services\Rate\Directions\Direction;
 use App\Services\Rate\Directions\DirectionBuy;
@@ -47,25 +48,35 @@ class Rate
             throw new RateException('Provided currency is not valid for this rate');
         }
 
+        $rate = null;
+
         if ($this->asset->isCrypto()) {
             if ($currency === $this->asset) {
-                return $amount * $this->getRate();
+                $rate = $amount * $this->getRate();
             }
 
             if ($currency === $this->currency) {
                 $rate = $this->getRate();
-                return $amount / $rate;
+                $rate = $amount / $rate;
             }
         }
 
         if ($this->asset->isFiat()) {
             if ($currency === $this->asset) {
-                return $amount * $this->getRate();
+                $rate = $amount * $this->getRate();
             }
 
             if ($currency === $this->currency) {
-                return $amount / $this->getRate();
+                $rate = $amount / $this->getRate();
             }
+        }
+
+        if ($rate) {
+            if ($this->asset->isCrypto() && $currency === $this->asset) {
+                return NumberFormatter::formatCurrency($rate, $this->asset->isCrypto());
+            }
+
+            return $rate;
         }
 
         throw new RateException();
@@ -79,7 +90,7 @@ class Rate
             $rate = $this->getRateWithFee();
         }
 
-        return $this->asset->isFiat() ? 1 / $rate : $rate;
+        return (float) $this->asset->isFiat() ? 1 / $rate : $rate;
     }
 
     public function getRevertedRate(): float

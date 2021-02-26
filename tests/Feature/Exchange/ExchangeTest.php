@@ -8,10 +8,13 @@ use App\Services\Exchange\ExchangeService;
 use App\Services\Rate\RateService;
 use App\Services\Rate\Sources\RateSource;
 use Database\Seeders\CurrencySeeder;
+use Illuminate\Foundation\Testing\RefreshDatabase;
 use Tests\TestCase;
 
 class ExchangeTest extends TestCase
 {
+    use RefreshDatabase;
+
     /**
      * A basic feature test example.
      *

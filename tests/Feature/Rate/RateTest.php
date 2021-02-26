@@ -11,11 +11,14 @@ use App\Services\Rate\RateService;
 use App\Services\Rate\Sources\CoinbaseRateSource;
 use Database\Seeders\CurrencySeeder;
 use Illuminate\Contracts\Container\BindingResolutionException;
+use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Support\Facades\Redis;
 use Tests\TestCase;
 
 class RateTest extends TestCase
 {
+    use RefreshDatabase;
+
     /**
      * A basic feature test example.
      *
@@ -68,5 +71,33 @@ class RateTest extends TestCase
         $rateWithFee = $rate->withFee()->getRate();
         $this->assertEquals($coinbaseRateWithFee, 1 / $rateWithFee);
         $this->assertEquals($expectedRate, $rateWithFee);
+    }
+
+    public function test_get_all_rates()
+    {
+        $this->seed(CurrencySeeder::class);
+
+        $currencies = Currency::available()->get();
+
+        $response = $this->get(route('rates.index'));
+        $rateService = app()->make(RateService::class);
+
+        $this->assertEquals(200, $response->getStatusCode());
+
+        $rates = json_decode($response->content(), true)['data'];
+        $rates = collect($rates);
+
+        foreach ($currencies as $baseCurrency) {
+            foreach ($currencies as $currency) {
+                if ($baseCurrency->is_fiat === $currency->is_fiat) continue;
+
+                $rateExists = $rates->filter(function($rate) use ($baseCurrency, $currency, $rateService){
+                    return $rate['pair'] === "{$baseCurrency->code}-{$currency->code}";
+                })->first();
+                $this->assertIsArray($rateExists);
+                $rate = $rateService->getExchangeRate($baseCurrency, $currency)->withFee()->getRate();
+                $this->assertEquals($rate, $rateExists['rate']);
+            }
+        }
     }
 }

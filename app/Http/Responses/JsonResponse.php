@@ -11,12 +11,20 @@ class JsonResponse
     private array $errors = [];
     private ?string $errorCode = null;
     private int $statusCode = 200;
+    private bool $isErrorResponse = false;
 
-    public function withErrors(array $errors, int $statusCode = 400, ?string $errorCode = null): self
+    public function withErrorCode(string $code): JsonResponse
+    {
+        $this->errorCode = $code;
+
+        return $this;
+    }
+
+    public function withErrors(array $errors, int $statusCode = 400): JsonResponse
     {
         $this->statusCode = $statusCode;
         $this->errors = $errors;
-        $this->errorCode = $errorCode;
+        $this->isErrorResponse = true;
 
         return $this;
     }
@@ -25,7 +33,7 @@ class JsonResponse
     {
         $body = [];
 
-        if ($this->errors) {
+        if ($this->isErrorResponse) {
             $body['errors'] = $this->errors;
             $body['code'] = $this->errorCode;
             return response()->json($body, $this->statusCode);

@@ -5,6 +5,7 @@ use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\Balance\BalanceController;
 use App\Http\Controllers\Currency\CurrencyController;
 use App\Http\Controllers\Exchange\ExchangeController;
+use App\Http\Controllers\Rate\RateController;
 use App\Http\Controllers\Transaction\TransactionController;
 use App\Http\Controllers\User\UserController;
 use Illuminate\Support\Facades\Route;
@@ -26,6 +27,9 @@ Route::prefix('/auth')->group(function(){
 });
 
 Route::get('/currencies', [CurrencyController::class, 'index'])->name('currencies.index');
+
+Route::get('/rates', [RateController::class, 'index'])->name('rates.index');
+Route::get('/rates/{pair}', [RateController::class, 'get'])->name('rates.get');
 
 Route::middleware('auth:sanctum')->group(function(){
     Route::prefix('/profile')->as('profile.')->group(function(){
