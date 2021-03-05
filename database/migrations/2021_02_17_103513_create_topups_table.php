@@ -18,7 +18,7 @@ class CreateTopupsTable extends Migration
             $table->foreignId('user_id')->constrained();
             $table->foreignId('currency_id')->constrained();
             $table->foreignId('balance_id')->constrained();
-            $table->foreignId('topup_method_id')->constrained();
+            $table->string('topup_method', 20);
             $table->decimal('amount', 36, 18);
             $table->string('transaction_id')->comment('Blockchain transaction id')->nullable()->index();
             $table->tinyInteger('status_id');

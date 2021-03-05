@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateWithdrawalRequestsTable extends Migration
+class CreateXenditDisbursementDetailsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,8 +13,12 @@ class CreateWithdrawalRequestsTable extends Migration
      */
     public function up()
     {
-        Schema::create('withdrawal_requests', function (Blueprint $table) {
+        Schema::create('xendit_disbursement_details', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('withdrawal_id');
+            $table->string('bank_code');
+            $table->string('account_holder_name');
+            $table->string('account_number');
             $table->timestamps();
         });
     }
@@ -26,6 +30,6 @@ class CreateWithdrawalRequestsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('withdrawal_requests');
+        Schema::dropIfExists('xendit_disbursement_details');
     }
 }

@@ -32,10 +32,34 @@ use Illuminate\Database\Eloquent\Model;
  * @method static \Illuminate\Database\Eloquent\Builder|Topup whereUpdatedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Topup whereUserId($value)
  * @mixin \Eloquent
+ * @property-read \App\Models\Balance $balance
+ * @property-read \App\Models\Currency $currency
+ * @property-read \App\Models\User $user
+ * @property string $topup_method
+ * @method static \Illuminate\Database\Eloquent\Builder|Topup whereTopupMethod($value)
  */
 class Topup extends Model
 {
     use HasFactory;
 
     public const TRANSACTION_TYPE = 'topup';
+
+    public const STATUS_CREATED = 1;
+    public const STATUS_DONE = 2;
+    public const STATUS_EXPIRED = 3;
+
+    public function balance()
+    {
+        return $this->belongsTo(Balance::class);
+    }
+
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
+
+    public function currency()
+    {
+        return $this->belongsTo(Currency::class);
+    }
 }

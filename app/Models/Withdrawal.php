@@ -36,10 +36,52 @@ use Illuminate\Database\Eloquent\Model;
  * @method static \Illuminate\Database\Eloquent\Builder|Withdrawal whereUserId($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Withdrawal whereWithdrawalMethodId($value)
  * @mixin \Eloquent
+ * @property string $withdrawal_method
+ * @property-read \App\Models\Balance $balance
+ * @property-read \App\Models\Currency $currency
+ * @property-read \App\Models\Transaction|null $transaction
+ * @property-read \App\Models\User $user
+ * @property-read \App\Models\XenditDisbursementDetail|null $xenditDisbursementDetail
+ * @method static \Illuminate\Database\Eloquent\Builder|Withdrawal whereWithdrawalMethod($value)
  */
 class Withdrawal extends Model
 {
     use HasFactory;
 
     public const TRANSACTION_TYPE = 'withdrawal';
+
+    const STATUS_CREATED = 1;
+    const STATUS_PENDING = 2;
+    const STATUS_SUCCESSFUL = 3;
+    const STATUS_DECLINED = 4;
+
+    public function currency()
+    {
+        return $this->belongsTo(Currency::class);
+    }
+
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
+
+    public function balance()
+    {
+        return $this->belongsTo(Balance::class);
+    }
+
+    public function transaction()
+    {
+        return $this->morphOne(Transaction::class, 'typeable');
+    }
+
+    public function xenditDisbursementDetail()
+    {
+        return $this->hasOne(XenditDisbursementDetail::class);
+    }
+
+    public function isAbleToProcess(): bool
+    {
+        return $this->status_id === self::STATUS_CREATED;
+    }
 }

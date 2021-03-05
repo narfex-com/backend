@@ -774,964 +774,831 @@ SELECT|sys.sys_config
     <table id="239" parent="2" name="personal_access_tokens">
       <Collation>utf8mb4_unicode_ci</Collation>
     </table>
-    <table id="240" parent="2" name="topup_methods">
+    <table id="240" parent="2" name="topups">
       <Collation>utf8mb4_unicode_ci</Collation>
     </table>
-    <table id="241" parent="2" name="topups">
+    <table id="241" parent="2" name="transactions">
       <Collation>utf8mb4_unicode_ci</Collation>
     </table>
-    <table id="242" parent="2" name="transactions">
+    <table id="242" parent="2" name="translations">
       <Collation>utf8mb4_unicode_ci</Collation>
     </table>
-    <table id="243" parent="2" name="translations">
+    <table id="243" parent="2" name="users">
       <Collation>utf8mb4_unicode_ci</Collation>
     </table>
-    <table id="244" parent="2" name="users">
+    <table id="244" parent="2" name="withdrawals">
       <Collation>utf8mb4_unicode_ci</Collation>
     </table>
-    <table id="245" parent="2" name="withdrawal_methods">
+    <table id="245" parent="2" name="xendit_disbursement_details">
       <Collation>utf8mb4_unicode_ci</Collation>
     </table>
-    <table id="246" parent="2" name="withdrawal_requests">
-      <Collation>utf8mb4_unicode_ci</Collation>
-    </table>
-    <table id="247" parent="2" name="withdrawals">
-      <Collation>utf8mb4_unicode_ci</Collation>
-    </table>
-    <column id="248" parent="233" name="id">
+    <column id="246" parent="233" name="id">
       <Position>1</Position>
       <DataType>bigint(20) unsigned|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>null</SequenceIdentity>
     </column>
-    <column id="249" parent="233" name="user_id">
+    <column id="247" parent="233" name="user_id">
       <Position>2</Position>
       <DataType>bigint(20) unsigned|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="250" parent="233" name="currency_id">
+    <column id="248" parent="233" name="currency_id">
       <Position>3</Position>
       <DataType>bigint(20) unsigned|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="251" parent="233" name="address">
+    <column id="249" parent="233" name="address">
       <Position>4</Position>
       <DataType>varchar(255)|0s</DataType>
     </column>
-    <column id="252" parent="233" name="amount">
+    <column id="250" parent="233" name="amount">
       <Position>5</Position>
       <DataType>decimal(36,18 digit)|0s</DataType>
       <NotNull>1</NotNull>
       <DefaultExpression>0.000000000000000000</DefaultExpression>
     </column>
-    <column id="253" parent="233" name="created_at">
+    <column id="251" parent="233" name="created_at">
       <Position>6</Position>
       <DataType>timestamp|0s</DataType>
     </column>
-    <column id="254" parent="233" name="updated_at">
+    <column id="252" parent="233" name="updated_at">
       <Position>7</Position>
       <DataType>timestamp|0s</DataType>
     </column>
-    <index id="255" parent="233" name="balances_address_unique">
+    <index id="253" parent="233" name="balances_address_unique">
       <ColNames>address</ColNames>
       <Unique>1</Unique>
       <Type>btree</Type>
     </index>
-    <index id="256" parent="233" name="balances_user_id_foreign">
+    <index id="254" parent="233" name="balances_user_id_foreign">
       <ColNames>user_id</ColNames>
       <Type>btree</Type>
     </index>
-    <index id="257" parent="233" name="balances_currency_id_foreign">
+    <index id="255" parent="233" name="balances_currency_id_foreign">
       <ColNames>currency_id</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="258" parent="233" name="PRIMARY">
+    <key id="256" parent="233" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <key id="259" parent="233" name="balances_address_unique">
+    <key id="257" parent="233" name="balances_address_unique">
       <ColNames>address</ColNames>
       <UnderlyingIndexName>balances_address_unique</UnderlyingIndexName>
     </key>
-    <foreign-key id="260" parent="233" name="balances_user_id_foreign">
+    <foreign-key id="258" parent="233" name="balances_user_id_foreign">
       <ColNames>user_id</ColNames>
       <RefTableName>users</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <foreign-key id="261" parent="233" name="balances_currency_id_foreign">
+    <foreign-key id="259" parent="233" name="balances_currency_id_foreign">
       <ColNames>currency_id</ColNames>
       <RefTableName>currencies</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <column id="262" parent="234" name="id">
+    <column id="260" parent="234" name="id">
       <Position>1</Position>
       <DataType>bigint(20) unsigned|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>null</SequenceIdentity>
     </column>
-    <column id="263" parent="234" name="code">
+    <column id="261" parent="234" name="code">
       <Position>2</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="264" parent="234" name="name">
+    <column id="262" parent="234" name="name">
       <Position>3</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="265" parent="234" name="is_fiat">
+    <column id="263" parent="234" name="is_fiat">
       <Position>4</Position>
       <DataType>tinyint(1)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="266" parent="234" name="is_enabled">
+    <column id="264" parent="234" name="is_enabled">
       <Position>5</Position>
       <DataType>tinyint(1)|0s</DataType>
       <NotNull>1</NotNull>
       <DefaultExpression>1</DefaultExpression>
     </column>
-    <column id="267" parent="234" name="created_at">
+    <column id="265" parent="234" name="created_at">
       <Position>6</Position>
       <DataType>timestamp|0s</DataType>
     </column>
-    <column id="268" parent="234" name="updated_at">
+    <column id="266" parent="234" name="updated_at">
       <Position>7</Position>
       <DataType>timestamp|0s</DataType>
     </column>
-    <key id="269" parent="234" name="PRIMARY">
+    <key id="267" parent="234" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="270" parent="235" name="id">
+    <column id="268" parent="235" name="id">
       <Position>1</Position>
       <DataType>bigint(20) unsigned|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>null</SequenceIdentity>
     </column>
-    <column id="271" parent="235" name="user_id">
+    <column id="269" parent="235" name="user_id">
       <Position>2</Position>
       <DataType>bigint(20) unsigned|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="272" parent="235" name="from_balance_id">
+    <column id="270" parent="235" name="from_balance_id">
       <Position>3</Position>
       <DataType>bigint(20) unsigned|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="273" parent="235" name="to_balance_id">
+    <column id="271" parent="235" name="to_balance_id">
       <Position>4</Position>
       <DataType>bigint(20) unsigned|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="274" parent="235" name="from_currency_id">
+    <column id="272" parent="235" name="from_currency_id">
       <Position>5</Position>
       <DataType>bigint(20) unsigned|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="275" parent="235" name="to_currency_id">
+    <column id="273" parent="235" name="to_currency_id">
       <Position>6</Position>
       <DataType>bigint(20) unsigned|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="276" parent="235" name="rate">
+    <column id="274" parent="235" name="rate">
       <Position>7</Position>
       <DataType>decimal(36,18 digit)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="277" parent="235" name="from_amount">
+    <column id="275" parent="235" name="from_amount">
       <Position>8</Position>
       <DataType>decimal(36,18 digit)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="278" parent="235" name="to_amount">
+    <column id="276" parent="235" name="to_amount">
       <Position>9</Position>
       <DataType>decimal(36,18 digit)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="279" parent="235" name="status_id">
+    <column id="277" parent="235" name="status_id">
       <Position>10</Position>
       <DataType>tinyint(4)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="280" parent="235" name="created_at">
+    <column id="278" parent="235" name="created_at">
       <Position>11</Position>
       <DataType>timestamp|0s</DataType>
     </column>
-    <column id="281" parent="235" name="updated_at">
+    <column id="279" parent="235" name="updated_at">
       <Position>12</Position>
       <DataType>timestamp|0s</DataType>
     </column>
-    <index id="282" parent="235" name="exchanges_user_id_foreign">
+    <index id="280" parent="235" name="exchanges_user_id_foreign">
       <ColNames>user_id</ColNames>
       <Type>btree</Type>
     </index>
-    <index id="283" parent="235" name="exchanges_from_balance_id_foreign">
+    <index id="281" parent="235" name="exchanges_from_balance_id_foreign">
       <ColNames>from_balance_id</ColNames>
       <Type>btree</Type>
     </index>
-    <index id="284" parent="235" name="exchanges_to_balance_id_foreign">
+    <index id="282" parent="235" name="exchanges_to_balance_id_foreign">
       <ColNames>to_balance_id</ColNames>
       <Type>btree</Type>
     </index>
-    <index id="285" parent="235" name="exchanges_from_currency_id_foreign">
+    <index id="283" parent="235" name="exchanges_from_currency_id_foreign">
       <ColNames>from_currency_id</ColNames>
       <Type>btree</Type>
     </index>
-    <index id="286" parent="235" name="exchanges_to_currency_id_foreign">
+    <index id="284" parent="235" name="exchanges_to_currency_id_foreign">
       <ColNames>to_currency_id</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="287" parent="235" name="PRIMARY">
+    <key id="285" parent="235" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="288" parent="235" name="exchanges_user_id_foreign">
+    <foreign-key id="286" parent="235" name="exchanges_user_id_foreign">
       <ColNames>user_id</ColNames>
       <RefTableName>users</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <foreign-key id="289" parent="235" name="exchanges_from_balance_id_foreign">
+    <foreign-key id="287" parent="235" name="exchanges_from_balance_id_foreign">
       <ColNames>from_balance_id</ColNames>
       <RefTableName>balances</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <foreign-key id="290" parent="235" name="exchanges_to_balance_id_foreign">
+    <foreign-key id="288" parent="235" name="exchanges_to_balance_id_foreign">
       <ColNames>to_balance_id</ColNames>
       <RefTableName>balances</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <foreign-key id="291" parent="235" name="exchanges_from_currency_id_foreign">
+    <foreign-key id="289" parent="235" name="exchanges_from_currency_id_foreign">
       <ColNames>from_currency_id</ColNames>
       <RefTableName>currencies</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <foreign-key id="292" parent="235" name="exchanges_to_currency_id_foreign">
+    <foreign-key id="290" parent="235" name="exchanges_to_currency_id_foreign">
       <ColNames>to_currency_id</ColNames>
       <RefTableName>currencies</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <column id="293" parent="236" name="id">
+    <column id="291" parent="236" name="id">
       <Position>1</Position>
       <DataType>bigint(20) unsigned|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>null</SequenceIdentity>
     </column>
-    <column id="294" parent="236" name="uuid">
+    <column id="292" parent="236" name="uuid">
       <Position>2</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="295" parent="236" name="connection">
+    <column id="293" parent="236" name="connection">
       <Position>3</Position>
       <DataType>text|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="296" parent="236" name="queue">
+    <column id="294" parent="236" name="queue">
       <Position>4</Position>
       <DataType>text|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="297" parent="236" name="payload">
+    <column id="295" parent="236" name="payload">
       <Position>5</Position>
       <DataType>longtext|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="298" parent="236" name="exception">
+    <column id="296" parent="236" name="exception">
       <Position>6</Position>
       <DataType>longtext|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="299" parent="236" name="failed_at">
+    <column id="297" parent="236" name="failed_at">
       <Position>7</Position>
       <DataType>timestamp|0s</DataType>
       <NotNull>1</NotNull>
       <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
     </column>
-    <index id="300" parent="236" name="failed_jobs_uuid_unique">
+    <index id="298" parent="236" name="failed_jobs_uuid_unique">
       <ColNames>uuid</ColNames>
       <Unique>1</Unique>
       <Type>btree</Type>
     </index>
-    <key id="301" parent="236" name="PRIMARY">
+    <key id="299" parent="236" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <key id="302" parent="236" name="failed_jobs_uuid_unique">
+    <key id="300" parent="236" name="failed_jobs_uuid_unique">
       <ColNames>uuid</ColNames>
       <UnderlyingIndexName>failed_jobs_uuid_unique</UnderlyingIndexName>
     </key>
-    <column id="303" parent="237" name="id">
+    <column id="301" parent="237" name="id">
       <Position>1</Position>
       <DataType>int(10) unsigned|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>null</SequenceIdentity>
     </column>
-    <column id="304" parent="237" name="migration">
+    <column id="302" parent="237" name="migration">
       <Position>2</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="305" parent="237" name="batch">
+    <column id="303" parent="237" name="batch">
       <Position>3</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <key id="306" parent="237" name="PRIMARY">
+    <key id="304" parent="237" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="307" parent="238" name="email">
+    <column id="305" parent="238" name="email">
       <Position>1</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="308" parent="238" name="token">
+    <column id="306" parent="238" name="token">
       <Position>2</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="309" parent="238" name="created_at">
+    <column id="307" parent="238" name="created_at">
       <Position>3</Position>
       <DataType>timestamp|0s</DataType>
     </column>
-    <index id="310" parent="238" name="password_resets_email_index">
+    <index id="308" parent="238" name="password_resets_email_index">
       <ColNames>email</ColNames>
       <Type>btree</Type>
     </index>
-    <column id="311" parent="239" name="id">
+    <column id="309" parent="239" name="id">
       <Position>1</Position>
       <DataType>bigint(20) unsigned|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>null</SequenceIdentity>
     </column>
-    <column id="312" parent="239" name="tokenable_type">
+    <column id="310" parent="239" name="tokenable_type">
       <Position>2</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="313" parent="239" name="tokenable_id">
+    <column id="311" parent="239" name="tokenable_id">
       <Position>3</Position>
       <DataType>bigint(20) unsigned|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="314" parent="239" name="name">
+    <column id="312" parent="239" name="name">
       <Position>4</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="315" parent="239" name="token">
+    <column id="313" parent="239" name="token">
       <Position>5</Position>
       <DataType>varchar(64)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="316" parent="239" name="abilities">
+    <column id="314" parent="239" name="abilities">
       <Position>6</Position>
       <DataType>text|0s</DataType>
     </column>
-    <column id="317" parent="239" name="last_used_at">
+    <column id="315" parent="239" name="last_used_at">
       <Position>7</Position>
       <DataType>timestamp|0s</DataType>
     </column>
-    <column id="318" parent="239" name="created_at">
+    <column id="316" parent="239" name="created_at">
       <Position>8</Position>
       <DataType>timestamp|0s</DataType>
     </column>
-    <column id="319" parent="239" name="updated_at">
+    <column id="317" parent="239" name="updated_at">
       <Position>9</Position>
       <DataType>timestamp|0s</DataType>
     </column>
-    <index id="320" parent="239" name="personal_access_tokens_token_unique">
+    <index id="318" parent="239" name="personal_access_tokens_token_unique">
       <ColNames>token</ColNames>
       <Unique>1</Unique>
       <Type>btree</Type>
     </index>
-    <index id="321" parent="239" name="personal_access_tokens_tokenable_type_tokenable_id_index">
+    <index id="319" parent="239" name="personal_access_tokens_tokenable_type_tokenable_id_index">
       <ColNames>tokenable_type
 tokenable_id</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="322" parent="239" name="PRIMARY">
+    <key id="320" parent="239" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <key id="323" parent="239" name="personal_access_tokens_token_unique">
+    <key id="321" parent="239" name="personal_access_tokens_token_unique">
       <ColNames>token</ColNames>
       <UnderlyingIndexName>personal_access_tokens_token_unique</UnderlyingIndexName>
     </key>
-    <column id="324" parent="240" name="id">
+    <column id="322" parent="240" name="id">
       <Position>1</Position>
       <DataType>bigint(20) unsigned|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>null</SequenceIdentity>
     </column>
-    <column id="325" parent="240" name="user_id">
+    <column id="323" parent="240" name="user_id">
       <Position>2</Position>
       <DataType>bigint(20) unsigned|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="326" parent="240" name="currency_id">
+    <column id="324" parent="240" name="currency_id">
       <Position>3</Position>
       <DataType>bigint(20) unsigned|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="327" parent="240" name="balance_id">
+    <column id="325" parent="240" name="balance_id">
       <Position>4</Position>
       <DataType>bigint(20) unsigned|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="328" parent="240" name="withdrawal_method_id">
+    <column id="326" parent="240" name="topup_method">
       <Position>5</Position>
-      <DataType>bigint(20) unsigned|0s</DataType>
+      <DataType>varchar(20)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="329" parent="240" name="amount">
+    <column id="327" parent="240" name="amount">
       <Position>6</Position>
       <DataType>decimal(36,18 digit)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="330" parent="240" name="status_id">
-      <Position>7</Position>
-      <DataType>tinyint(4)|0s</DataType>
-      <NotNull>1</NotNull>
-    </column>
-    <column id="331" parent="240" name="created_at">
-      <Position>8</Position>
-      <DataType>timestamp|0s</DataType>
-    </column>
-    <column id="332" parent="240" name="updated_at">
-      <Position>9</Position>
-      <DataType>timestamp|0s</DataType>
-    </column>
-    <index id="333" parent="240" name="topup_methods_user_id_foreign">
-      <ColNames>user_id</ColNames>
-      <Type>btree</Type>
-    </index>
-    <index id="334" parent="240" name="topup_methods_currency_id_foreign">
-      <ColNames>currency_id</ColNames>
-      <Type>btree</Type>
-    </index>
-    <index id="335" parent="240" name="topup_methods_balance_id_foreign">
-      <ColNames>balance_id</ColNames>
-      <Type>btree</Type>
-    </index>
-    <index id="336" parent="240" name="topup_methods_withdrawal_method_id_foreign">
-      <ColNames>withdrawal_method_id</ColNames>
-      <Type>btree</Type>
-    </index>
-    <key id="337" parent="240" name="PRIMARY">
-      <NameSurrogate>1</NameSurrogate>
-      <ColNames>id</ColNames>
-      <Primary>1</Primary>
-    </key>
-    <foreign-key id="338" parent="240" name="topup_methods_user_id_foreign">
-      <ColNames>user_id</ColNames>
-      <RefTableName>users</RefTableName>
-      <RefColNames>id</RefColNames>
-    </foreign-key>
-    <foreign-key id="339" parent="240" name="topup_methods_currency_id_foreign">
-      <ColNames>currency_id</ColNames>
-      <RefTableName>currencies</RefTableName>
-      <RefColNames>id</RefColNames>
-    </foreign-key>
-    <foreign-key id="340" parent="240" name="topup_methods_balance_id_foreign">
-      <ColNames>balance_id</ColNames>
-      <RefTableName>balances</RefTableName>
-      <RefColNames>id</RefColNames>
-    </foreign-key>
-    <foreign-key id="341" parent="240" name="topup_methods_withdrawal_method_id_foreign">
-      <ColNames>withdrawal_method_id</ColNames>
-      <RefTableName>withdrawal_methods</RefTableName>
-      <RefColNames>id</RefColNames>
-    </foreign-key>
-    <column id="342" parent="241" name="id">
-      <Position>1</Position>
-      <DataType>bigint(20) unsigned|0s</DataType>
-      <NotNull>1</NotNull>
-      <SequenceIdentity>null</SequenceIdentity>
-    </column>
-    <column id="343" parent="241" name="user_id">
-      <Position>2</Position>
-      <DataType>bigint(20) unsigned|0s</DataType>
-      <NotNull>1</NotNull>
-    </column>
-    <column id="344" parent="241" name="currency_id">
-      <Position>3</Position>
-      <DataType>bigint(20) unsigned|0s</DataType>
-      <NotNull>1</NotNull>
-    </column>
-    <column id="345" parent="241" name="balance_id">
-      <Position>4</Position>
-      <DataType>bigint(20) unsigned|0s</DataType>
-      <NotNull>1</NotNull>
-    </column>
-    <column id="346" parent="241" name="topup_method_id">
-      <Position>5</Position>
-      <DataType>bigint(20) unsigned|0s</DataType>
-      <NotNull>1</NotNull>
-    </column>
-    <column id="347" parent="241" name="amount">
-      <Position>6</Position>
-      <DataType>decimal(36,18 digit)|0s</DataType>
-      <NotNull>1</NotNull>
-    </column>
-    <column id="348" parent="241" name="transaction_id">
+    <column id="328" parent="240" name="transaction_id">
       <Position>7</Position>
       <Comment>Blockchain transaction id</Comment>
       <DataType>varchar(255)|0s</DataType>
     </column>
-    <column id="349" parent="241" name="status_id">
+    <column id="329" parent="240" name="status_id">
       <Position>8</Position>
       <DataType>tinyint(4)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="350" parent="241" name="created_at">
+    <column id="330" parent="240" name="created_at">
       <Position>9</Position>
       <DataType>timestamp|0s</DataType>
     </column>
-    <column id="351" parent="241" name="updated_at">
+    <column id="331" parent="240" name="updated_at">
       <Position>10</Position>
       <DataType>timestamp|0s</DataType>
     </column>
-    <index id="352" parent="241" name="topups_user_id_foreign">
+    <index id="332" parent="240" name="topups_user_id_foreign">
       <ColNames>user_id</ColNames>
       <Type>btree</Type>
     </index>
-    <index id="353" parent="241" name="topups_currency_id_foreign">
+    <index id="333" parent="240" name="topups_currency_id_foreign">
       <ColNames>currency_id</ColNames>
       <Type>btree</Type>
     </index>
-    <index id="354" parent="241" name="topups_balance_id_foreign">
+    <index id="334" parent="240" name="topups_balance_id_foreign">
       <ColNames>balance_id</ColNames>
       <Type>btree</Type>
     </index>
-    <index id="355" parent="241" name="topups_topup_method_id_foreign">
-      <ColNames>topup_method_id</ColNames>
-      <Type>btree</Type>
-    </index>
-    <index id="356" parent="241" name="topups_transaction_id_index">
+    <index id="335" parent="240" name="topups_transaction_id_index">
       <ColNames>transaction_id</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="357" parent="241" name="PRIMARY">
+    <key id="336" parent="240" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="358" parent="241" name="topups_user_id_foreign">
+    <foreign-key id="337" parent="240" name="topups_user_id_foreign">
       <ColNames>user_id</ColNames>
       <RefTableName>users</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <foreign-key id="359" parent="241" name="topups_currency_id_foreign">
+    <foreign-key id="338" parent="240" name="topups_currency_id_foreign">
       <ColNames>currency_id</ColNames>
       <RefTableName>currencies</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <foreign-key id="360" parent="241" name="topups_balance_id_foreign">
+    <foreign-key id="339" parent="240" name="topups_balance_id_foreign">
       <ColNames>balance_id</ColNames>
       <RefTableName>balances</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <foreign-key id="361" parent="241" name="topups_topup_method_id_foreign">
-      <ColNames>topup_method_id</ColNames>
-      <RefTableName>topup_methods</RefTableName>
-      <RefColNames>id</RefColNames>
-    </foreign-key>
-    <column id="362" parent="242" name="id">
+    <column id="340" parent="241" name="id">
       <Position>1</Position>
       <DataType>bigint(20) unsigned|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>null</SequenceIdentity>
     </column>
-    <column id="363" parent="242" name="user_id">
+    <column id="341" parent="241" name="user_id">
       <Position>2</Position>
       <DataType>bigint(20) unsigned|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="364" parent="242" name="from_currency_id">
+    <column id="342" parent="241" name="from_currency_id">
       <Position>3</Position>
       <DataType>bigint(20) unsigned|0s</DataType>
     </column>
-    <column id="365" parent="242" name="to_currency_id">
+    <column id="343" parent="241" name="to_currency_id">
       <Position>4</Position>
       <DataType>bigint(20) unsigned|0s</DataType>
     </column>
-    <column id="366" parent="242" name="from_balance_id">
+    <column id="344" parent="241" name="from_balance_id">
       <Position>5</Position>
       <DataType>bigint(20) unsigned|0s</DataType>
     </column>
-    <column id="367" parent="242" name="to_balance_id">
+    <column id="345" parent="241" name="to_balance_id">
       <Position>6</Position>
       <DataType>bigint(20) unsigned|0s</DataType>
     </column>
-    <column id="368" parent="242" name="typeable_type">
+    <column id="346" parent="241" name="typeable_type">
       <Position>7</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="369" parent="242" name="typeable_id">
+    <column id="347" parent="241" name="typeable_id">
       <Position>8</Position>
       <DataType>bigint(20) unsigned|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="370" parent="242" name="amount">
+    <column id="348" parent="241" name="amount">
       <Position>9</Position>
       <DataType>decimal(36,18 digit)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="371" parent="242" name="created_at">
+    <column id="349" parent="241" name="created_at">
       <Position>10</Position>
       <DataType>timestamp|0s</DataType>
     </column>
-    <column id="372" parent="242" name="updated_at">
+    <column id="350" parent="241" name="updated_at">
       <Position>11</Position>
       <DataType>timestamp|0s</DataType>
     </column>
-    <index id="373" parent="242" name="transactions_user_id_foreign">
+    <index id="351" parent="241" name="transactions_user_id_foreign">
       <ColNames>user_id</ColNames>
       <Type>btree</Type>
     </index>
-    <index id="374" parent="242" name="transactions_typeable_type_typeable_id_index">
+    <index id="352" parent="241" name="transactions_typeable_type_typeable_id_index">
       <ColNames>typeable_type
 typeable_id</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="375" parent="242" name="PRIMARY">
+    <key id="353" parent="241" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="376" parent="242" name="transactions_user_id_foreign">
+    <foreign-key id="354" parent="241" name="transactions_user_id_foreign">
       <ColNames>user_id</ColNames>
       <RefTableName>users</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <column id="377" parent="243" name="id">
+    <column id="355" parent="242" name="id">
       <Position>1</Position>
       <DataType>bigint(20) unsigned|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>null</SequenceIdentity>
     </column>
-    <column id="378" parent="243" name="language">
+    <column id="356" parent="242" name="language">
       <Position>2</Position>
       <DataType>varchar(5)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="379" parent="243" name="type">
+    <column id="357" parent="242" name="type">
       <Position>3</Position>
       <DataType>tinyint(4)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="380" parent="243" name="name">
+    <column id="358" parent="242" name="name">
       <Position>4</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="381" parent="243" name="value">
+    <column id="359" parent="242" name="value">
       <Position>5</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="382" parent="243" name="created_at">
+    <column id="360" parent="242" name="created_at">
       <Position>6</Position>
       <DataType>timestamp|0s</DataType>
     </column>
-    <column id="383" parent="243" name="updated_at">
+    <column id="361" parent="242" name="updated_at">
       <Position>7</Position>
       <DataType>timestamp|0s</DataType>
     </column>
-    <key id="384" parent="243" name="PRIMARY">
+    <key id="362" parent="242" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
+    <column id="363" parent="243" name="id">
+      <Position>1</Position>
+      <DataType>bigint(20) unsigned|0s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>null</SequenceIdentity>
+    </column>
+    <column id="364" parent="243" name="inviter_id">
+      <Position>2</Position>
+      <DataType>bigint(20) unsigned|0s</DataType>
+    </column>
+    <column id="365" parent="243" name="first_name">
+      <Position>3</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="366" parent="243" name="last_name">
+      <Position>4</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="367" parent="243" name="nickname">
+      <Position>5</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="368" parent="243" name="email">
+      <Position>6</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="369" parent="243" name="email_verified_at">
+      <Position>7</Position>
+      <DataType>timestamp|0s</DataType>
+    </column>
+    <column id="370" parent="243" name="password">
+      <Position>8</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="371" parent="243" name="is_verified">
+      <Position>9</Position>
+      <DataType>tinyint(1)|0s</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>0</DefaultExpression>
+    </column>
+    <column id="372" parent="243" name="is_banned">
+      <Position>10</Position>
+      <DataType>tinyint(1)|0s</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>0</DefaultExpression>
+    </column>
+    <column id="373" parent="243" name="is_2fa_enabled">
+      <Position>11</Position>
+      <DataType>tinyint(1)|0s</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>0</DefaultExpression>
+    </column>
+    <column id="374" parent="243" name="country">
+      <Position>12</Position>
+      <DataType>varchar(255)|0s</DataType>
+    </column>
+    <column id="375" parent="243" name="city">
+      <Position>13</Position>
+      <DataType>varchar(255)|0s</DataType>
+    </column>
+    <column id="376" parent="243" name="ga_hash">
+      <Position>14</Position>
+      <DataType>varchar(255)|0s</DataType>
+    </column>
+    <column id="377" parent="243" name="remember_token">
+      <Position>15</Position>
+      <DataType>varchar(100)|0s</DataType>
+    </column>
+    <column id="378" parent="243" name="created_at">
+      <Position>16</Position>
+      <DataType>timestamp|0s</DataType>
+    </column>
+    <column id="379" parent="243" name="updated_at">
+      <Position>17</Position>
+      <DataType>timestamp|0s</DataType>
+    </column>
+    <index id="380" parent="243" name="users_email_unique">
+      <ColNames>email</ColNames>
+      <Unique>1</Unique>
+      <Type>btree</Type>
+    </index>
+    <index id="381" parent="243" name="users_inviter_id_foreign">
+      <ColNames>inviter_id</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="382" parent="243" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <key id="383" parent="243" name="users_email_unique">
+      <ColNames>email</ColNames>
+      <UnderlyingIndexName>users_email_unique</UnderlyingIndexName>
+    </key>
+    <foreign-key id="384" parent="243" name="users_inviter_id_foreign">
+      <ColNames>inviter_id</ColNames>
+      <RefTableName>users</RefTableName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
     <column id="385" parent="244" name="id">
       <Position>1</Position>
       <DataType>bigint(20) unsigned|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>null</SequenceIdentity>
     </column>
-    <column id="386" parent="244" name="inviter_id">
+    <column id="386" parent="244" name="user_id">
       <Position>2</Position>
       <DataType>bigint(20) unsigned|0s</DataType>
+      <NotNull>1</NotNull>
     </column>
-    <column id="387" parent="244" name="first_name">
+    <column id="387" parent="244" name="admin_id">
       <Position>3</Position>
-      <DataType>varchar(255)|0s</DataType>
-      <NotNull>1</NotNull>
+      <DataType>bigint(20) unsigned|0s</DataType>
     </column>
-    <column id="388" parent="244" name="last_name">
+    <column id="388" parent="244" name="currency_id">
       <Position>4</Position>
-      <DataType>varchar(255)|0s</DataType>
+      <DataType>bigint(20) unsigned|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="389" parent="244" name="nickname">
+    <column id="389" parent="244" name="balance_id">
       <Position>5</Position>
-      <DataType>varchar(255)|0s</DataType>
+      <DataType>bigint(20) unsigned|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="390" parent="244" name="email">
+    <column id="390" parent="244" name="withdrawal_method">
       <Position>6</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="391" parent="244" name="email_verified_at">
+    <column id="391" parent="244" name="amount">
       <Position>7</Position>
-      <DataType>timestamp|0s</DataType>
+      <DataType>decimal(36,18 digit)|0s</DataType>
+      <NotNull>1</NotNull>
     </column>
-    <column id="392" parent="244" name="password">
+    <column id="392" parent="244" name="status_id">
       <Position>8</Position>
-      <DataType>varchar(255)|0s</DataType>
+      <DataType>tinyint(4)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="393" parent="244" name="is_verified">
+    <column id="393" parent="244" name="transaction_id">
       <Position>9</Position>
-      <DataType>tinyint(1)|0s</DataType>
-      <NotNull>1</NotNull>
-      <DefaultExpression>0</DefaultExpression>
+      <Comment>Blockchain transaction id</Comment>
+      <DataType>varchar(255)|0s</DataType>
     </column>
-    <column id="394" parent="244" name="is_banned">
+    <column id="394" parent="244" name="declined_reason">
       <Position>10</Position>
-      <DataType>tinyint(1)|0s</DataType>
-      <NotNull>1</NotNull>
-      <DefaultExpression>0</DefaultExpression>
+      <DataType>varchar(255)|0s</DataType>
     </column>
-    <column id="395" parent="244" name="is_2fa_enabled">
+    <column id="395" parent="244" name="created_at">
       <Position>11</Position>
-      <DataType>tinyint(1)|0s</DataType>
-      <NotNull>1</NotNull>
-      <DefaultExpression>0</DefaultExpression>
+      <DataType>timestamp|0s</DataType>
     </column>
-    <column id="396" parent="244" name="country">
+    <column id="396" parent="244" name="updated_at">
       <Position>12</Position>
-      <DataType>varchar(255)|0s</DataType>
-    </column>
-    <column id="397" parent="244" name="city">
-      <Position>13</Position>
-      <DataType>varchar(255)|0s</DataType>
-    </column>
-    <column id="398" parent="244" name="ga_hash">
-      <Position>14</Position>
-      <DataType>varchar(255)|0s</DataType>
-    </column>
-    <column id="399" parent="244" name="remember_token">
-      <Position>15</Position>
-      <DataType>varchar(100)|0s</DataType>
-    </column>
-    <column id="400" parent="244" name="created_at">
-      <Position>16</Position>
       <DataType>timestamp|0s</DataType>
     </column>
-    <column id="401" parent="244" name="updated_at">
-      <Position>17</Position>
-      <DataType>timestamp|0s</DataType>
-    </column>
-    <index id="402" parent="244" name="users_email_unique">
-      <ColNames>email</ColNames>
-      <Unique>1</Unique>
+    <index id="397" parent="244" name="withdrawals_user_id_foreign">
+      <ColNames>user_id</ColNames>
       <Type>btree</Type>
     </index>
-    <index id="403" parent="244" name="users_inviter_id_foreign">
-      <ColNames>inviter_id</ColNames>
+    <index id="398" parent="244" name="withdrawals_admin_id_foreign">
+      <ColNames>admin_id</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="404" parent="244" name="PRIMARY">
+    <index id="399" parent="244" name="withdrawals_currency_id_foreign">
+      <ColNames>currency_id</ColNames>
+      <Type>btree</Type>
+    </index>
+    <index id="400" parent="244" name="withdrawals_balance_id_foreign">
+      <ColNames>balance_id</ColNames>
+      <Type>btree</Type>
+    </index>
+    <index id="401" parent="244" name="withdrawals_status_id_index">
+      <ColNames>status_id</ColNames>
+      <Type>btree</Type>
+    </index>
+    <index id="402" parent="244" name="withdrawals_transaction_id_index">
+      <ColNames>transaction_id</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="403" parent="244" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <key id="405" parent="244" name="users_email_unique">
-      <ColNames>email</ColNames>
-      <UnderlyingIndexName>users_email_unique</UnderlyingIndexName>
-    </key>
-    <foreign-key id="406" parent="244" name="users_inviter_id_foreign">
-      <ColNames>inviter_id</ColNames>
+    <foreign-key id="404" parent="244" name="withdrawals_user_id_foreign">
+      <ColNames>user_id</ColNames>
       <RefTableName>users</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <column id="407" parent="245" name="id">
+    <foreign-key id="405" parent="244" name="withdrawals_admin_id_foreign">
+      <ColNames>admin_id</ColNames>
+      <RefTableName>users</RefTableName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <foreign-key id="406" parent="244" name="withdrawals_currency_id_foreign">
+      <ColNames>currency_id</ColNames>
+      <RefTableName>currencies</RefTableName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <foreign-key id="407" parent="244" name="withdrawals_balance_id_foreign">
+      <ColNames>balance_id</ColNames>
+      <RefTableName>balances</RefTableName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <column id="408" parent="245" name="id">
       <Position>1</Position>
       <DataType>bigint(20) unsigned|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>null</SequenceIdentity>
     </column>
-    <column id="408" parent="245" name="currency_id">
+    <column id="409" parent="245" name="withdrawal_id">
       <Position>2</Position>
       <DataType>bigint(20) unsigned|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="409" parent="245" name="name">
+    <column id="410" parent="245" name="bank_code">
       <Position>3</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="410" parent="245" name="fee">
+    <column id="411" parent="245" name="account_holder_name">
       <Position>4</Position>
-      <DataType>double(8,2 digit)|0s</DataType>
+      <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="411" parent="245" name="limit">
+    <column id="412" parent="245" name="account_number">
       <Position>5</Position>
-      <DataType>decimal(36,18 digit)|0s</DataType>
+      <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="412" parent="245" name="created_at">
+    <column id="413" parent="245" name="created_at">
       <Position>6</Position>
       <DataType>timestamp|0s</DataType>
     </column>
-    <column id="413" parent="245" name="updated_at">
+    <column id="414" parent="245" name="updated_at">
       <Position>7</Position>
       <DataType>timestamp|0s</DataType>
     </column>
-    <index id="414" parent="245" name="withdrawal_methods_currency_id_foreign">
-      <ColNames>currency_id</ColNames>
-      <Type>btree</Type>
-    </index>
     <key id="415" parent="245" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="416" parent="245" name="withdrawal_methods_currency_id_foreign">
-      <ColNames>currency_id</ColNames>
-      <RefTableName>currencies</RefTableName>
-      <RefColNames>id</RefColNames>
-    </foreign-key>
-    <column id="417" parent="246" name="id">
-      <Position>1</Position>
-      <DataType>bigint(20) unsigned|0s</DataType>
-      <NotNull>1</NotNull>
-      <SequenceIdentity>null</SequenceIdentity>
-    </column>
-    <column id="418" parent="246" name="created_at">
-      <Position>2</Position>
-      <DataType>timestamp|0s</DataType>
-    </column>
-    <column id="419" parent="246" name="updated_at">
-      <Position>3</Position>
-      <DataType>timestamp|0s</DataType>
-    </column>
-    <key id="420" parent="246" name="PRIMARY">
-      <NameSurrogate>1</NameSurrogate>
-      <ColNames>id</ColNames>
-      <Primary>1</Primary>
-    </key>
-    <column id="421" parent="247" name="id">
-      <Position>1</Position>
-      <DataType>bigint(20) unsigned|0s</DataType>
-      <NotNull>1</NotNull>
-      <SequenceIdentity>null</SequenceIdentity>
-    </column>
-    <column id="422" parent="247" name="user_id">
-      <Position>2</Position>
-      <DataType>bigint(20) unsigned|0s</DataType>
-      <NotNull>1</NotNull>
-    </column>
-    <column id="423" parent="247" name="admin_id">
-      <Position>3</Position>
-      <DataType>bigint(20) unsigned|0s</DataType>
-    </column>
-    <column id="424" parent="247" name="currency_id">
-      <Position>4</Position>
-      <DataType>bigint(20) unsigned|0s</DataType>
-      <NotNull>1</NotNull>
-    </column>
-    <column id="425" parent="247" name="balance_id">
-      <Position>5</Position>
-      <DataType>bigint(20) unsigned|0s</DataType>
-      <NotNull>1</NotNull>
-    </column>
-    <column id="426" parent="247" name="withdrawal_method_id">
-      <Position>6</Position>
-      <DataType>bigint(20) unsigned|0s</DataType>
-      <NotNull>1</NotNull>
-    </column>
-    <column id="427" parent="247" name="amount">
-      <Position>7</Position>
-      <DataType>decimal(36,18 digit)|0s</DataType>
-      <NotNull>1</NotNull>
-    </column>
-    <column id="428" parent="247" name="status_id">
-      <Position>8</Position>
-      <DataType>tinyint(4)|0s</DataType>
-      <NotNull>1</NotNull>
-    </column>
-    <column id="429" parent="247" name="transaction_id">
-      <Position>9</Position>
-      <Comment>Blockchain transaction id</Comment>
-      <DataType>varchar(255)|0s</DataType>
-    </column>
-    <column id="430" parent="247" name="declined_reason">
-      <Position>10</Position>
-      <DataType>varchar(255)|0s</DataType>
-    </column>
-    <column id="431" parent="247" name="created_at">
-      <Position>11</Position>
-      <DataType>timestamp|0s</DataType>
-    </column>
-    <column id="432" parent="247" name="updated_at">
-      <Position>12</Position>
-      <DataType>timestamp|0s</DataType>
-    </column>
-    <index id="433" parent="247" name="withdrawals_user_id_foreign">
-      <ColNames>user_id</ColNames>
-      <Type>btree</Type>
-    </index>
-    <index id="434" parent="247" name="withdrawals_admin_id_foreign">
-      <ColNames>admin_id</ColNames>
-      <Type>btree</Type>
-    </index>
-    <index id="435" parent="247" name="withdrawals_currency_id_foreign">
-      <ColNames>currency_id</ColNames>
-      <Type>btree</Type>
-    </index>
-    <index id="436" parent="247" name="withdrawals_balance_id_foreign">
-      <ColNames>balance_id</ColNames>
-      <Type>btree</Type>
-    </index>
-    <index id="437" parent="247" name="withdrawals_withdrawal_method_id_foreign">
-      <ColNames>withdrawal_method_id</ColNames>
-      <Type>btree</Type>
-    </index>
-    <index id="438" parent="247" name="withdrawals_transaction_id_index">
-      <ColNames>transaction_id</ColNames>
-      <Type>btree</Type>
-    </index>
-    <key id="439" parent="247" name="PRIMARY">
-      <NameSurrogate>1</NameSurrogate>
-      <ColNames>id</ColNames>
-      <Primary>1</Primary>
-    </key>
-    <foreign-key id="440" parent="247" name="withdrawals_user_id_foreign">
-      <ColNames>user_id</ColNames>
-      <RefTableName>users</RefTableName>
-      <RefColNames>id</RefColNames>
-    </foreign-key>
-    <foreign-key id="441" parent="247" name="withdrawals_admin_id_foreign">
-      <ColNames>admin_id</ColNames>
-      <RefTableName>users</RefTableName>
-      <RefColNames>id</RefColNames>
-    </foreign-key>
-    <foreign-key id="442" parent="247" name="withdrawals_currency_id_foreign">
-      <ColNames>currency_id</ColNames>
-      <RefTableName>currencies</RefTableName>
-      <RefColNames>id</RefColNames>
-    </foreign-key>
-    <foreign-key id="443" parent="247" name="withdrawals_balance_id_foreign">
-      <ColNames>balance_id</ColNames>
-      <RefTableName>balances</RefTableName>
-      <RefColNames>id</RefColNames>
-    </foreign-key>
-    <foreign-key id="444" parent="247" name="withdrawals_withdrawal_method_id_foreign">
-      <ColNames>withdrawal_method_id</ColNames>
-      <RefTableName>withdrawal_methods</RefTableName>
-      <RefColNames>id</RefColNames>
-    </foreign-key>
   </database-model>
 </dataSource>

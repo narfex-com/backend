@@ -6,8 +6,11 @@ use App\Http\Controllers\Balance\BalanceController;
 use App\Http\Controllers\Currency\CurrencyController;
 use App\Http\Controllers\Exchange\ExchangeController;
 use App\Http\Controllers\Rate\RateController;
+use App\Http\Controllers\Topup\TopupController;
 use App\Http\Controllers\Transaction\TransactionController;
 use App\Http\Controllers\User\UserController;
+use App\Http\Controllers\Withdrawal\Webhooks\XenditController;
+use App\Http\Controllers\Withdrawal\WithdrawalController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -47,5 +50,21 @@ Route::middleware('auth:sanctum')->group(function(){
 
     Route::prefix('/transactions')->as('transactions.')->group(function(){
         Route::get('/', [TransactionController::class, 'index'])->name('index');
+    });
+
+    Route::prefix('/topups')->as('topups.')->group(function(){
+        Route::post('/', [TopupController::class, 'create'])->name('create');
+    });
+
+    Route::prefix('/withdrawals')->as('withdrawals.')->group(function(){
+        Route::post('/', [WithdrawalController::class, 'withdraw'])->name('create');
+    });
+});
+
+// Webhooks
+Route::prefix('/webhooks')->as('webhooks.')->group(function(){
+    Route::prefix('/xendit')->as('xendit.')->group(function(){
+        Route::post('/withdrawal', [XenditController::class, 'webhook'])->name('disbursement');
+        Route::post('/invoice', [XenditController::class, 'invoice'])->name('invoice');
     });
 });

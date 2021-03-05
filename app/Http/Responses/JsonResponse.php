@@ -15,6 +15,7 @@ class JsonResponse
 
     public function withErrorCode(string $code): JsonResponse
     {
+        $this->isErrorResponse = true;
         $this->errorCode = $code;
 
         return $this;
