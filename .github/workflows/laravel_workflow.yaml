@@ -14,6 +14,7 @@ jobs:
       mysql:
         # Docker Hub image (also with version)
         image: mysql:5.7
+        name: narfex-mysql
         env:
           MYSQL_ALLOW_EMPTY_PASSWORD: yes
           MYSQL_DATABASE:  db_test_laravel
@@ -29,6 +30,7 @@ jobs:
       redis:
         # Docker Hub image
         image: redis
+        name: narfex-redis
         ports:
           - 6379:6379
         # Set health checks to wait until redis has started
@@ -72,7 +74,7 @@ jobs:
           DB_DATABASE: db_test_laravel
           DB_PORT: 3306
           DB_USER: root
-          DB_HOST: mysql
+          DB_HOST: narfex-mysql
 
         run: php artisan migrate
 
@@ -83,9 +85,9 @@ jobs:
           DB_DATABASE: db_test_laravel
           DB_PORT: 3306
           DB_USER: root
-          DB_HOST: mysql
+          DB_HOST: narfex-mysql
           REDIS_PORT: 6379
-          REDIS_HOST: redis
+          REDIS_HOST: narfex-redis
 
         run: vendor/bin/phpunit --testdox
 
