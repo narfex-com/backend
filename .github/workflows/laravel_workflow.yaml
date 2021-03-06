@@ -12,7 +12,7 @@ jobs:
       mysql:
         image: mysql:5.7
         env:
-          MYSQL_ALLOW_EMPTY_PASSWORD: yes
+          MYSQL_ROOT_PASSWORD: KBHJ8765ljk767kh
           MYSQL_DATABASE: laravel
         ports:
           - 3306:3306
@@ -65,6 +65,7 @@ jobs:
           DB_HOST: 127.0.0.1
           DB_PORT: ${{ job.services.mysql.ports[3306] }}
           DB_USER: root
+          DB_PASSWORD: KBHJ8765ljk767kh
 
         run: php artisan migrate
 
@@ -75,6 +76,8 @@ jobs:
           DB_HOST: 127.0.0.1
           DB_PORT: ${{ job.services.mysql.ports[3306] }}
           DB_USER: root
+          DB_PASSWORD: KBHJ8765ljk767kh
+          REDIS_HOST: 127.0.0.1
           REDIS_PORT: 6379
 
         run: vendor/bin/phpunit --testdox
