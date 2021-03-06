@@ -24,7 +24,6 @@ class CoinbaseRateSource extends RateSource implements RateSourceInterface
             throw new CannotGetRateException('Can not get rate if both of currencies are with same type');
         }
 
-        //test push
         if ($this->isExchangeRateRequested) {
             $direction = $asset->isFiat()
                 ? new DirectionBuy()
@@ -41,10 +40,10 @@ class CoinbaseRateSource extends RateSource implements RateSourceInterface
 
         $cacheKey = "exchange_rate_{$this->asset->code}_{$this->currency->code}_{$this->direction->getDirection()}";
 
-//        $rate = $this->redis->get($cacheKey);
-//        if ($rate && $rate > 0) {
-//            return new Rate($this->asset, $this->currency, $rate, $direction);
-//        }
+        $rate = $this->redis->get($cacheKey);
+        if ($rate && $rate > 0) {
+            return new Rate($this->asset, $this->currency, $rate, $direction);
+        }
 
         $rate = $this->getRateFromCoinbase($this->asset, $this->currency, $this->direction);
         $this->redis->set($cacheKey, $rate);
