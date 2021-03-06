@@ -14,7 +14,6 @@ jobs:
       mysql:
         # Docker Hub image (also with version)
         image: mysql:5.7
-        name: narfex-mysql
         env:
           MYSQL_ALLOW_EMPTY_PASSWORD: yes
           MYSQL_DATABASE: laravel
@@ -30,7 +29,6 @@ jobs:
       redis:
         # Docker Hub image
         image: redis
-        name: narfex-redis
         ports:
           - 6379:6379
         # Set health checks to wait until redis has started
