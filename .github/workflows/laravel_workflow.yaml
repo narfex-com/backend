@@ -47,7 +47,6 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-      - uses: php-actions/composer@v5
       - name: Install PHP versions
         uses: shivammathur/setup-php@v2
         with:
