@@ -61,6 +61,7 @@ jobs:
       - name: Install Dependencies
         uses: php-actions/composer@v5
         with:
+          php_extensions: ext-redis
           php_version: 7.4
       - name: Generate key
         run: php artisan key:generate
