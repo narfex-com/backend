@@ -8,7 +8,6 @@ use App\Http\Controllers\Controller;
 use App\Http\Requests\Withdrawal\CreateWithdrawalRequest;
 use App\Http\Resources\Withdrawal\WithdrawalResource;
 use App\Services\Withdrawal\WithdrawalService;
-use Illuminate\Http\Request;
 
 class WithdrawalController extends Controller
 {

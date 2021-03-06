@@ -3,6 +3,7 @@
 namespace Tests\Feature\Rate;
 
 use App\Exceptions\Rate\Coinbase\CannotGetRateException;
+use App\Helpers\NumberFormatter;
 use App\Models\Currency;
 use App\Services\Rate\Directions\DirectionBuy;
 use App\Services\Rate\Directions\DirectionSell;
@@ -69,7 +70,7 @@ class RateTest extends TestCase
         $coinbaseRateWithFee = $coinbaseRate + $fee;
         $expectedRate = 1 / $coinbaseRateWithFee;
         $rateWithFee = $rate->withFee()->getRate();
-        $this->assertEquals($coinbaseRateWithFee, 1 / $rateWithFee);
+        $this->assertEquals(NumberFormatter::formatCurrency($coinbaseRateWithFee), NumberFormatter::formatCurrency(1 / $rateWithFee));
         $this->assertEquals($expectedRate, $rateWithFee);
     }
 

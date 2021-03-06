@@ -3,8 +3,10 @@
 namespace App\Providers;
 
 use App\Models\Exchange;
+use App\Models\Topup;
 use App\Models\Withdrawal;
 use App\Observers\ExchangeObserver;
+use App\Observers\TopupObserver;
 use App\Observers\WithdrawalObserver;
 use App\Services\Rate\Sources\CoinbaseRateSource;
 use App\Services\Rate\Sources\RateSourceInterface;
@@ -31,5 +33,6 @@ class AppServiceProvider extends ServiceProvider
     {
         Exchange::observe(ExchangeObserver::class);
         Withdrawal::observe(WithdrawalObserver::class);
+        Topup::observe(TopupObserver::class);
     }
 }
