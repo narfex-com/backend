@@ -17,7 +17,7 @@ jobs:
         name: narfex-mysql
         env:
           MYSQL_ALLOW_EMPTY_PASSWORD: yes
-          MYSQL_DATABASE:  db_test_laravel
+          MYSQL_DATABASE: laravel
         ## map the "external" 33306 port with the "internal" 3306
         ports:
           - 3306:3306
@@ -71,10 +71,9 @@ jobs:
         # Set environment
         env:
           DB_CONNECTION: mysql
-          DB_DATABASE: db_test_laravel
-          DB_PORT: 3306
+          DB_DATABASE: laravel
+          DB_PORT: ${{ job.services.mysql.ports[3306] }}
           DB_USER: root
-          DB_HOST: narfex-mysql
 
         run: php artisan migrate
 
@@ -82,12 +81,10 @@ jobs:
         # Set environment
         env:
           DB_CONNECTION: mysql
-          DB_DATABASE: db_test_laravel
-          DB_PORT: 3306
+          DB_DATABASE: laravel
+          B_PORT: ${{ job.services.mysql.ports[3306] }}
           DB_USER: root
-          DB_HOST: narfex-mysql
           REDIS_PORT: 6379
-          REDIS_HOST: narfex-redis
 
         run: vendor/bin/phpunit --testdox
 
