@@ -4,9 +4,22 @@ namespace App\Observers;
 
 use App\Models\Exchange;
 use App\Models\Transaction;
+use App\Services\Hedge\HedgeService;
 
 class ExchangeObserver
 {
+    private HedgeService $hedgeService;
+
+    /**
+     * ExchangeObserver constructor.
+     * @param HedgeService $hedgeService
+     */
+    public function __construct(HedgeService $hedgeService)
+    {
+        $this->hedgeService = $hedgeService;
+    }
+
+
     public function created(Exchange $exchange)
     {
         $transaction = new Transaction();
@@ -21,5 +34,6 @@ class ExchangeObserver
         $transaction->updated_at = $exchange->updated_at;
 
         $transaction->save();
+        $this->hedgeService->createHedge($exchange);
     }
 }
