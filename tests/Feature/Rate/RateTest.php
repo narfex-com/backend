@@ -70,7 +70,8 @@ class RateTest extends TestCase
         $coinbaseRateWithFee = $coinbaseRate + $fee;
         $expectedRate = 1 / $coinbaseRateWithFee;
         $rateWithFee = $rate->withFee()->getRate();
-        $this->assertEquals(NumberFormatter::formatCurrency($coinbaseRateWithFee), NumberFormatter::formatCurrency(1 / $rateWithFee));
+        //$this->assertEquals(NumberFormatter::formatCurrency($coinbaseRateWithFee), NumberFormatter::formatCurrency(1 / $rateWithFee));
+        $this->assertEquals($coinbaseRateWithFee, 1/$rateWithFee);
         $this->assertEquals($expectedRate, $rateWithFee);
     }
 

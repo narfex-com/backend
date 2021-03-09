@@ -24,7 +24,7 @@ class CreateExchangesTable extends Migration
             $table->decimal('from_amount', 36, 18);
             $table->decimal('to_amount', 36, 18);
             $table->tinyInteger('status_id');
-            $table->string('declined_reason');
+            $table->string('declined_reason')->nullable();
             $table->timestamps();
 
             $table->foreign('from_balance_id')->references('id')->on('balances');

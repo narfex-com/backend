@@ -21,9 +21,9 @@ class HedgeService
     }
 
 
-    public function createHedge(Exchange $exchange): Hedge
+    public function createHedge(Exchange $exchange): ?Hedge
     {
-
+        return null;
     }
 
     public function createHedgeOrder(Hedge $hedge)
