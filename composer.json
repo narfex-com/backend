@@ -19,6 +19,7 @@
         "laravel/sanctum": "^2.9",
         "laravel/tinker": "^2.5",
         "predis/predis": "^1.1",
+        "spatie/async": "^1.5",
         "xendit/xendit-php": "^2.9"
     },
     "require-dev": {

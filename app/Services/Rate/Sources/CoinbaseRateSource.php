@@ -15,12 +15,11 @@ use GuzzleHttp\Exception\ClientException;
 class CoinbaseRateSource extends RateSource implements RateSourceInterface
 {
     private bool $isExchangeRateRequested = false;
+    private bool $isLiveRate = false;
 
     public function getRate(Currency $asset, Currency $currency, ?Direction $direction = null): Rate
     {
-        $fiatOnlyCurrencies = $asset->is_fiat && $currency->is_fiat;
-        $cryptoOnlyCurrencies = !$asset->is_fiat && !$currency->is_fiat;
-        if ($fiatOnlyCurrencies || $cryptoOnlyCurrencies) {
+        if ($asset->hasSameType($currency)) {
             throw new CannotGetRateException('Can not get rate if both of currencies are with same type');
         }
 
@@ -34,25 +33,14 @@ class CoinbaseRateSource extends RateSource implements RateSourceInterface
         $this->currency = $currency;
         $this->direction = $direction;
 
-        if (app()->environment() === 'testing' && self::$testRate) {
-            return new Rate($this->asset, $this->currency, self::$testRate, $this->direction);
-        }
-
-        $cacheKey = "exchange_rate_{$this->asset->code}_{$this->currency->code}_{$this->direction->getDirection()}";
-
-        $rate = $this->redis->get($cacheKey);
-        if ($rate && $rate > 0) {
-            return new Rate($this->asset, $this->currency, $rate, $direction);
-        }
-
         $rate = $this->getRateFromCoinbase($this->asset, $this->currency, $this->direction);
-        $this->redis->set($cacheKey, $rate);
 
         return new Rate($this->asset, $this->currency, $rate, $direction);
     }
 
-    public function getExchangeRate(Currency $asset, Currency $currency): Rate
+    public function getExchangeRate(Currency $asset, Currency $currency, bool $isLiveRate = false): Rate
     {
+        $this->isLiveRate = $isLiveRate;
         return $this->withExchangeRate()->getRate($asset, $currency);
     }
 
@@ -84,5 +72,11 @@ class CoinbaseRateSource extends RateSource implements RateSourceInterface
         $this->isExchangeRateRequested = true;
 
         return $this;
+    }
+
+    public function getRatesByCurrency(Currency $currency): array
+    {
+        $response = $this->client->get("https://api.coinbase.com/v2/exchange-rates/?currency={$currency->code}");
+        return (array) json_decode($response->getBody())->data->rates;
     }
 }

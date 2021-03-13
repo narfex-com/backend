@@ -36,7 +36,7 @@ class SettleDisbursementRequest extends FormRequest
     {
         try {
             return new DisbursementWebhookData(
-                (int) $this->get('external_id'),
+                (int)$this->get('external_id'),
                 $this->get('status'),
                 $this->get('failure_code')
             );

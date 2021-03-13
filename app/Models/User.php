@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use App\Models\Traits\Roleable;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
@@ -57,22 +58,17 @@ use Laravel\Sanctum\HasApiTokens;
  * @mixin \Eloquent
  * @property-read \Illuminate\Database\Eloquent\Collection|\App\Models\Transaction[] $transactions
  * @property-read int|null $transactions_count
+ * @property-read \Illuminate\Database\Eloquent\Collection|\App\Models\Ban[] $activeBans
+ * @property-read int|null $active_bans_count
+ * @property-read \Illuminate\Database\Eloquent\Collection|\App\Models\Ban[] $bans
+ * @property-read int|null $bans_count
+ * @property-read \Illuminate\Database\Eloquent\Collection|\App\Models\Role[] $roles
+ * @property-read int|null $roles_count
  */
 
 class User extends Authenticatable
 {
-    use HasApiTokens, HasFactory, Notifiable;
-
-    /**
-     * The attributes that are mass assignable.
-     *
-     * @var array
-     */
-    protected $fillable = [
-        'name',
-        'email',
-        'password',
-    ];
+    use HasApiTokens, HasFactory, Notifiable, Roleable;
 
     /**
      * The attributes that should be hidden for arrays.
@@ -101,5 +97,25 @@ class User extends Authenticatable
     public function transactions()
     {
         return $this->hasMany(Transaction::class);
+    }
+
+    public function activeBans()
+    {
+        return $this->hasMany(Ban::class)->where('ban_until', '>', now()->toDateTimeString());
+    }
+
+    public function bans()
+    {
+        return $this->hasMany(Ban::class);
+    }
+
+    public function isBanned(): ?bool
+    {
+        return $this->activeBans->isNotEmpty();
+    }
+
+    public function roles()
+    {
+        return $this->belongsToMany(Role::class);
     }
 }

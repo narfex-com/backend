@@ -5,7 +5,6 @@ namespace Tests\Feature\Rate;
 use App\Exceptions\Rate\Coinbase\CannotGetRateException;
 use App\Helpers\NumberFormatter;
 use App\Models\Currency;
-use App\Services\Rate\Directions\DirectionBuy;
 use App\Services\Rate\Directions\DirectionSell;
 use App\Services\Rate\Rate;
 use App\Services\Rate\RateService;
@@ -62,17 +61,13 @@ class RateTest extends TestCase
         $source = app()->make(CoinbaseRateSource::class);
         $rateService = app()->make(RateService::class);
 
-        $direction = new DirectionBuy();
         $rate = $rateService->getExchangeRate($fiatCurrency, $cryptoCurrency);
 
-        $coinbaseRate = $source->getRateFromCoinbase($fiatCurrency, $cryptoCurrency, $direction);
-        $fee = $coinbaseRate * 0.04;
-        $coinbaseRateWithFee = $coinbaseRate + $fee;
+        $coinbaseRate = $source->getExchangeRate($fiatCurrency, $cryptoCurrency);
+        $coinbaseRateWithFee = $coinbaseRate->withFee()->getRate();
         $expectedRate = 1 / $coinbaseRateWithFee;
         $rateWithFee = $rate->withFee()->getRate();
-        //$this->assertEquals(NumberFormatter::formatCurrency($coinbaseRateWithFee), NumberFormatter::formatCurrency(1 / $rateWithFee));
-        $this->assertEquals($coinbaseRateWithFee, 1/$rateWithFee);
-        $this->assertEquals($expectedRate, $rateWithFee);
+        $this->assertEquals(NumberFormatter::formatCurrency($expectedRate), NumberFormatter::formatCurrency(1 / $rateWithFee));
     }
 
     public function test_get_all_rates()

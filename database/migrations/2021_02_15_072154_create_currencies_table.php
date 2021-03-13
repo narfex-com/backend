@@ -19,6 +19,8 @@ class CreateCurrenciesTable extends Migration
             $table->string('name');
             $table->boolean('is_fiat');
             $table->boolean('is_enabled')->default(true);
+            $table->float('withdraw_fee_percent')->nullable();
+            $table->float('topup_fee_percent')->nullable();
             $table->timestamps();
         });
     }

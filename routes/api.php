@@ -24,7 +24,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::prefix('/auth')->group(function(){
+Route::prefix('/auth')->group(function () {
     Route::post('/login', [LoginController::class, 'login'])->name('login');
     Route::post('/register', [RegisterController::class, 'register'])->name('register');
 });
@@ -34,36 +34,36 @@ Route::get('/currencies', [CurrencyController::class, 'index'])->name('currencie
 Route::get('/rates', [RateController::class, 'index'])->name('rates.index');
 Route::get('/rates/{pair}', [RateController::class, 'get'])->name('rates.get');
 
-Route::middleware('auth:sanctum')->group(function(){
-    Route::prefix('/profile')->as('profile.')->group(function(){
+Route::middleware('auth:sanctum')->group(function () {
+    Route::prefix('/profile')->as('profile.')->group(function () {
         Route::get('/', [UserController::class, 'index'])->name('index');
     });
 
-    Route::prefix('/balances')->as('balances.')->group(function(){
+    Route::prefix('/balances')->as('balances.')->group(function () {
         Route::get('/', [BalanceController::class, 'index'])->name('index');
         Route::post('/{currency}', [BalanceController::class, 'create'])->name('create');
     });
 
-    Route::prefix('/exchanges')->as('exchanges.')->group(function(){
-        Route::post('/', [ExchangeController::class, 'exchange'])->name('create');
+    Route::prefix('/exchanges')->as('exchanges.')->group(function () {
+        Route::post('/', [ExchangeController::class, 'exchange'])->name('create')->middleware('is_banned');
     });
 
-    Route::prefix('/transactions')->as('transactions.')->group(function(){
+    Route::prefix('/transactions')->as('transactions.')->group(function () {
         Route::get('/', [TransactionController::class, 'index'])->name('index');
     });
 
-    Route::prefix('/topups')->as('topups.')->group(function(){
-        Route::post('/', [TopupController::class, 'create'])->name('create');
+    Route::prefix('/topups')->as('topups.')->group(function () {
+        Route::post('/', [TopupController::class, 'create'])->name('create')->middleware('is_banned');
     });
 
-    Route::prefix('/withdrawals')->as('withdrawals.')->group(function(){
-        Route::post('/', [WithdrawalController::class, 'withdraw'])->name('create');
+    Route::prefix('/withdrawals')->as('withdrawals.')->group(function () {
+        Route::post('/', [WithdrawalController::class, 'withdraw'])->name('create')->middleware('is_banned');
     });
 });
 
 // Webhooks
-Route::prefix('/webhooks')->as('webhooks.')->group(function(){
-    Route::prefix('/xendit')->as('xendit.')->group(function(){
+Route::prefix('/webhooks')->as('webhooks.')->group(function () {
+    Route::prefix('/xendit')->as('xendit.')->group(function () {
         Route::post('/disbursement', [XenditController::class, 'disbursement'])->name('disbursement');
         Route::post('/invoice', [XenditController::class, 'invoice'])->name('invoice');
     });

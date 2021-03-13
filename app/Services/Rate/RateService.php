@@ -27,8 +27,8 @@ class RateService
         return $this->rateSource->getRate($asset, $currency, $direction);
     }
 
-    public function getExchangeRate(Currency $asset, Currency $currency): Rate
+    public function getExchangeRate(Currency $asset, Currency $currency, bool $isLiveRate = false): Rate
     {
-        return $this->rateSource->getExchangeRate($asset, $currency);
+        return $this->rateSource->getExchangeRate($asset, $currency, $isLiveRate);
     }
 }

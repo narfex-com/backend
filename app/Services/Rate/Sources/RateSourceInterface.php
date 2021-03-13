@@ -12,5 +12,7 @@ interface RateSourceInterface
 {
     public function getRate(Currency $asset, Currency $currency, ?Direction $direction = null): Rate;
 
-    public function getExchangeRate(Currency $currency, Currency $asset): Rate;
+    public function getExchangeRate(Currency $currency, Currency $asset, bool $isLiveRate = false): Rate;
+
+    public function getRatesByCurrency(Currency $currency): array;
 }

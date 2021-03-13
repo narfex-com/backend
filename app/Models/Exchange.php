@@ -42,6 +42,8 @@ use Illuminate\Database\Eloquent\Model;
  * @property-read \App\Models\Currency $toCurrency
  * @property-read \App\Models\User $user
  * @property-read \App\Models\Transaction|null $transaction
+ * @property string|null $declined_reason
+ * @method static \Illuminate\Database\Eloquent\Builder|Exchange whereDeclinedReason($value)
  */
 class Exchange extends Model
 {

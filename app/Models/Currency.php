@@ -47,4 +47,9 @@ class Currency extends Model
     {
         return !$this->is_fiat;
     }
+
+    public function hasSameType(Currency $currency): bool
+    {
+        return $this->is_fiat === $currency->is_fiat;
+    }
 }

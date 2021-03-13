@@ -7,9 +7,7 @@ use App\Exceptions\Withdrawal\CurrencyNotSupportedException;
 use App\Http\Responses\JsonResponse;
 use App\Models\Balance;
 use App\Services\Withdrawal\WithdrawalProcessManager;
-use Illuminate\Contracts\Container\BindingResolutionException;
 use Illuminate\Foundation\Http\FormRequest;
-use Illuminate\Validation\ValidationException;
 
 class CreateWithdrawalRequest extends FormRequest
 {
